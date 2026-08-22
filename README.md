@@ -2103,369 +2103,931 @@
            MOBILE
         ========================================================== */
 
-        @media(max-width:900px) {
+@media (max-width: 900px){
 
-            .nav-links {
+    .container{
+        width: min(calc(100% - 32px), var(--container));
+    }
 
-                position: absolute;
+    /* ================= HEADER ================= */
 
-                top: 72px;
+    .navbar{
+        height:68px;
+    }
 
-                left: 0;
+    .brand{
+        gap:9px;
+    }
 
-                width: 100%;
+    .brand-logo{
+        width:38px;
+        height:38px;
+    }
 
-                background: #090909;
+    .brand-name{
+        font-size:13px;
+        letter-spacing:.7px;
+    }
 
-                padding: 20px;
+    .brand-sub{
+        font-size:7px;
+        letter-spacing:1.2px;
+    }
 
-                display: none;
+    .menu-btn{
+        display:flex;
+        align-items:center;
+        justify-content:center;
 
-                flex-direction:
-                    column;
+        width:42px;
+        height:42px;
 
-                align-items:
-                    stretch;
+        border:1px solid #333;
+        border-radius:4px;
 
-                gap: 0;
+        background:#111;
+        color:white;
 
-                border-bottom:
-                    1px solid #222;
-            }
+        font-size:18px;
+    }
 
+    .nav-links{
 
-            .nav-links.active {
+        position:absolute;
 
-                display: flex;
-            }
+        top:68px;
+        left:0;
 
+        width:100%;
 
-            .nav-links a {
+        background:#090909;
 
-                padding: 14px 0;
+        padding:10px 20px 20px;
 
-                border-bottom:
-                    1px solid #222;
-            }
+        display:none;
 
+        flex-direction:column;
 
-            .nav-cta {
+        align-items:stretch;
 
-                text-align: center;
+        gap:0;
 
-                margin-top: 10px;
-            }
+        border-bottom:1px solid #292929;
 
+        box-shadow:0 15px 30px rgba(0,0,0,.35);
+    }
 
-            .menu-btn {
+    .nav-links.active{
+        display:flex;
+    }
 
-                display: block;
-            }
+    .nav-links a{
+        padding:15px 5px;
 
+        border-bottom:1px solid #222;
 
-            .hero-grid {
+        color:#bbb;
 
-                grid-template-columns:
-                    1fr;
+        font-size:14px;
+    }
 
-                gap: 60px;
-            }
+    .nav-links a:hover{
+        color:white;
+    }
 
+    .nav-links .nav-cta{
+        margin-top:12px;
 
-            .hero-visual {
+        text-align:center;
 
-                min-height: 430px;
-            }
+        border:1px solid #666;
 
+        padding:12px;
+    }
 
-            .floating-logo {
 
-                right: 10%;
-            }
+    /* ================= HERO ================= */
 
+    .hero{
+        min-height:auto;
 
-            .services-grid {
+        padding-top:68px;
+    }
 
-                grid-template-columns:
-                    1fr 1fr;
-            }
+    .hero-grid{
 
+        grid-template-columns:1fr;
 
-            .about-grid {
+        gap:20px;
 
-                grid-template-columns:
-                    1fr;
+        padding:65px 0 70px;
+    }
 
-                gap: 50px;
-            }
+    .hero-content{
+        text-align:left;
+    }
 
+    .rating-line{
 
-            .process-grid {
+        flex-wrap:wrap;
 
-                grid-template-columns:
-                    1fr 1fr;
-            }
+        gap:8px;
 
+        margin-bottom:22px;
 
-            .contact-grid {
+        font-size:11px;
+    }
 
-                grid-template-columns:
-                    1fr;
+    .stars{
+        letter-spacing:1px;
+    }
 
-                gap: 50px;
-            }
+    .hero h1{
 
+        font-size:clamp(44px,14vw,62px);
 
-            .footer-top {
+        line-height:1;
 
-                grid-template-columns:
-                    1fr 1fr;
-            }
+        letter-spacing:-1.5px;
+    }
 
-        }
+    .hero-description{
 
+        font-size:15px;
 
-        @media(max-width:650px) {
+        line-height:1.7;
 
-            .container {
+        margin-top:23px;
 
-                width:
-                    min(
-                        calc(100% - 30px),
-                        var(--container)
-                    );
-            }
+        max-width:100%;
+    }
 
+    .hero-buttons{
 
-            section {
+        display:grid;
 
-                padding: 80px 0;
-            }
+        grid-template-columns:1fr;
 
+        gap:10px;
 
-            .navbar {
+        margin-top:28px;
+    }
 
-                height: 65px;
-            }
+    .btn{
 
+        min-height:48px;
 
-            .nav-links {
+        padding:0 18px;
 
-                top: 65px;
-            }
+        font-size:12px;
+    }
 
+    .hero-buttons .btn{
+        width:100%;
+    }
 
-            .brand-name {
+    .hero-contact{
 
-                font-size: 13px;
-            }
+        display:grid;
 
+        grid-template-columns:1fr 1fr;
 
-            .brand-logo {
+        gap:12px;
 
-                width: 38px;
+        margin-top:35px;
+    }
 
-                height: 38px;
-            }
+    .hero-contact-item{
 
+        padding-left:12px;
 
-            .hero {
+        min-width:0;
+    }
 
-                padding-top: 65px;
-            }
+    .hero-contact-item:last-child{
 
+        grid-column:1 / -1;
+    }
 
-            .hero-grid {
+    .hero-contact-label{
 
-                padding: 65px 0;
-            }
+        font-size:8px;
 
+        letter-spacing:1.2px;
+    }
 
-            .hero h1 {
+    .hero-contact-number{
 
-                font-size: 51px;
+        font-size:12px;
 
-                letter-spacing: -1px;
-            }
+        word-break:break-word;
+    }
 
 
-            .hero-description {
+    /* ================= HERO VISUAL ================= */
 
-                font-size: 15px;
-            }
+    .hero-visual{
 
+        min-height:380px;
 
-            .hero-contact {
+        width:100%;
 
-                gap: 20px;
+        margin-top:5px;
 
-                flex-wrap: wrap;
-            }
+        display:flex;
 
+        align-items:center;
 
-            /* MOBILE FLOATING LOGO */
+        justify-content:center;
+    }
 
-            .floating-logo {
+    .floating-logo{
 
-                width: 130px;
+        width:125px;
+        height:125px;
 
-                height: 130px;
+        top:0;
+        right:4%;
 
-                right: 2%;
+        padding:12px;
 
-                padding: 12px;
-            }
+        z-index:2;
+    }
 
+    .business-card{
 
-            .business-card {
+        width:100%;
 
-                margin-top: 100px;
+        max-width:450px;
 
-                padding:
-                    17px
-                    18px
-                    14px;
-            }
+        margin-top:90px;
 
+        padding:18px 18px 14px;
+    }
 
-            .card-logo {
+    .card-top{
 
-                width: 65px;
+        font-size:13px;
+    }
 
-                height: 65px;
-            }
+    .card-phone{
 
+        font-size:10px;
+    }
 
-            .card-title {
+    .card-logo{
 
-                font-size: 20px;
-            }
+        width:65px;
+        height:65px;
 
+        margin:5px auto 10px;
+    }
 
-            .card-top {
+    .card-title{
 
-                font-size: 13px;
-            }
+        font-size:21px;
 
+        letter-spacing:1.5px;
 
-            .card-phone {
+        margin-bottom:12px;
+    }
 
-                font-size: 10px;
-            }
+    .card-services{
 
+        font-size:11px;
 
-            .card-footer {
+        line-height:1.5;
 
-                margin-left: -18px;
+        margin-bottom:14px;
+    }
 
-                margin-right: -18px;
+    .card-footer{
 
-                margin-bottom: -14px;
+        margin-left:-18px;
+        margin-right:-18px;
+        margin-bottom:-14px;
 
-                padding:
-                    10px 14px;
+        padding:10px 13px;
 
-                font-size: 8px;
-            }
+        flex-direction:column;
 
+        align-items:center;
 
-            .services-header,
-            .reviews-header {
+        text-align:center;
 
-                display: block;
-            }
+        gap:5px;
 
+        font-size:8px;
+    }
 
-            .services-grid {
 
-                grid-template-columns:
-                    1fr;
-            }
+    /* ================= GENERAL SECTIONS ================= */
 
+    section{
+        padding:75px 0;
+    }
 
-            .service-card {
+    .section-kicker{
 
-                min-height: auto;
-            }
+        font-size:9px;
 
+        letter-spacing:1.7px;
 
-            .benefits {
+        margin-bottom:14px;
+    }
 
-                grid-template-columns:
-                    1fr;
-            }
+    .section-title{
 
+        font-size:clamp(35px,10vw,48px);
 
-            .process-grid {
+        letter-spacing:-1px;
 
-                grid-template-columns:
-                    1fr;
-            }
+        line-height:1.08;
+    }
 
+    .section-intro{
 
-            .stats-grid {
+        font-size:14px;
 
-                grid-template-columns:
-                    1fr 1fr;
-            }
+        line-height:1.75;
 
+        margin-top:18px;
+    }
 
-            .reviews-grid {
 
-                grid-template-columns:
-                    1fr;
-            }
+    /* ================= SERVICES ================= */
 
+    .services-header{
 
-            .google-rating {
+        display:block;
 
-                margin-top: 25px;
+        margin-bottom:40px;
+    }
 
-                width: fit-content;
-            }
+    .services-grid{
 
+        grid-template-columns:1fr;
 
-            .contact-card {
+        border-top:1px solid var(--border);
+        border-left:1px solid var(--border);
+    }
 
-                padding:
-                    30px 25px;
-            }
+    .service-card{
 
+        min-height:auto;
 
-            .footer-top {
+        padding:30px 24px 32px;
+    }
 
-                grid-template-columns:
-                    1fr;
-            }
+    .service-icon{
 
+        width:40px;
+        height:40px;
 
-            .footer-bottom {
+        margin-bottom:20px;
+    }
 
-                flex-direction:
-                    column;
-            }
+    .service-number{
 
+        right:20px;
+        top:20px;
+    }
 
-            .whatsapp-float {
+    .service-card h3{
 
-                width: 50px;
+        font-size:21px;
 
-                height: 50px;
+        margin-bottom:10px;
+    }
 
-                right: 18px;
+    .service-card p{
 
-                bottom: 18px;
-            }
+        font-size:13px;
 
+        line-height:1.7;
+    }
 
-            .back-top {
+    .service-link{
 
-                right: 18px;
+        margin-top:17px;
 
-                bottom: 80px;
-            }
+        font-size:11px;
+    }
 
-        }
+
+    /* ================= STATS ================= */
+
+    .stats-section{
+
+        padding:55px 0;
+    }
+
+    .stats-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:1px;
+    }
+
+    .stat{
+
+        padding:22px 10px;
+
+        min-height:105px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:center;
+    }
+
+    .stat-number{
+
+        font-size:30px;
+
+        line-height:1.2;
+    }
+
+    .stat-label{
+
+        font-size:8px;
+
+        letter-spacing:.8px;
+
+        margin-top:5px;
+    }
+
+
+    /* ================= ABOUT ================= */
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+    }
+
+    .about-box{
+
+        min-height:350px;
+
+        padding:40px 30px;
+    }
+
+    .about-box h3{
+
+        font-size:38px;
+    }
+
+    .about-box p{
+
+        font-size:13px;
+
+        line-height:1.7;
+    }
+
+    .about-content p{
+
+        font-size:14px;
+
+        line-height:1.8;
+
+        margin-top:20px;
+    }
+
+    .benefits{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+        margin-top:28px;
+    }
+
+    .benefit{
+
+        gap:11px;
+    }
+
+    .benefit strong{
+
+        font-size:13px;
+    }
+
+    .benefit span{
+
+        font-size:11px;
+
+        line-height:1.5;
+    }
+
+
+    /* ================= PROCESS ================= */
+
+    .process-grid{
+
+        grid-template-columns:1fr;
+
+        margin-top:45px;
+    }
+
+    .process-card{
+
+        padding:28px 24px 32px;
+    }
+
+    .process-number{
+
+        font-size:32px;
+
+        margin-bottom:22px;
+    }
+
+    .process-card h3{
+
+        font-size:21px;
+    }
+
+    .process-card p{
+
+        font-size:13px;
+    }
+
+
+    /* ================= REVIEWS ================= */
+
+    .reviews-header{
+
+        display:block;
+
+        margin-bottom:35px;
+    }
+
+    .google-rating{
+
+        width:100%;
+
+        margin-top:25px;
+
+        justify-content:center;
+
+        padding:16px;
+    }
+
+    .google-score{
+
+        font-size:29px;
+    }
+
+    .reviews-grid{
+
+        grid-template-columns:1fr;
+
+        gap:14px;
+    }
+
+    .review-card{
+
+        padding:22px;
+    }
+
+    .review-top{
+
+        margin-bottom:17px;
+    }
+
+    .review-text{
+
+        font-size:12px;
+
+        line-height:1.75;
+    }
+
+
+    /* ================= FAQ ================= */
+
+    .faq-wrapper{
+
+        margin-top:35px;
+    }
+
+    .faq-question{
+
+        padding:19px 0;
+
+        font-size:16px;
+
+        gap:15px;
+    }
+
+    .faq-answer p{
+
+        font-size:13px;
+
+        line-height:1.75;
+
+        padding-bottom:20px;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+    }
+
+    .contact-details{
+
+        margin-top:30px;
+    }
+
+    .contact-item{
+
+        gap:13px;
+
+        padding:15px 0;
+    }
+
+    .contact-item-value{
+
+        font-size:13px;
+
+        line-height:1.6;
+    }
+
+    .contact-card{
+
+        padding:30px 22px;
+    }
+
+    .contact-card h3{
+
+        font-size:28px;
+    }
+
+    .contact-card p{
+
+        font-size:12px;
+
+        line-height:1.7;
+    }
+
+    .contact-buttons{
+
+        gap:9px;
+    }
+
+    .contact-buttons .btn{
+
+        min-height:48px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer{
+
+        padding:40px 0 22px;
+    }
+
+    .footer-top{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+        padding-bottom:30px;
+    }
+
+    .footer-brand p{
+
+        font-size:11px;
+
+        line-height:1.7;
+    }
+
+    .footer-title{
+
+        margin-bottom:13px;
+    }
+
+    .footer-links{
+
+        gap:8px;
+
+        font-size:11px;
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        gap:10px;
+
+        padding-top:18px;
+
+        line-height:1.6;
+    }
+
+
+    /* ================= FLOATING BUTTONS ================= */
+
+    .whatsapp-float{
+
+        width:52px;
+        height:52px;
+
+        right:16px;
+        bottom:16px;
+
+        font-size:23px;
+    }
+
+    .back-top{
+
+        width:40px;
+        height:40px;
+
+        right:16px;
+        bottom:78px;
+    }
+
+}
+
+
+/* =====================================================
+   EXTRA SMALL PHONES
+===================================================== */
+
+@media (max-width: 480px){
+
+    .container{
+
+        width:calc(100% - 26px);
+    }
+
+    .navbar{
+
+        height:64px;
+    }
+
+    .nav-links{
+
+        top:64px;
+    }
+
+    .hero{
+
+        padding-top:64px;
+    }
+
+    .hero-grid{
+
+        padding:55px 0 60px;
+    }
+
+    .hero h1{
+
+        font-size:46px;
+    }
+
+    .rating-line{
+
+        font-size:10px;
+    }
+
+    .hero-description{
+
+        font-size:14px;
+    }
+
+    .hero-contact{
+
+        grid-template-columns:1fr;
+
+        gap:10px;
+    }
+
+    .hero-contact-item:last-child{
+
+        grid-column:auto;
+    }
+
+    .hero-visual{
+
+        min-height:330px;
+    }
+
+    .floating-logo{
+
+        width:105px;
+        height:105px;
+
+        right:0;
+
+        padding:10px;
+    }
+
+    .business-card{
+
+        margin-top:75px;
+
+        padding:16px 14px 12px;
+    }
+
+    .card-top{
+
+        font-size:11px;
+    }
+
+    .card-phone{
+
+        font-size:9px;
+    }
+
+    .card-logo{
+
+        width:55px;
+        height:55px;
+    }
+
+    .card-title{
+
+        font-size:18px;
+    }
+
+    .card-services{
+
+        font-size:10px;
+    }
+
+    .card-footer{
+
+        margin-left:-14px;
+        margin-right:-14px;
+        margin-bottom:-12px;
+
+        font-size:7px;
+    }
+
+    section{
+
+        padding:65px 0;
+    }
+
+    .section-title{
+
+        font-size:35px;
+    }
+
+    .service-card{
+
+        padding:27px 20px 30px;
+    }
+
+    .about-box{
+
+        min-height:320px;
+
+        padding:35px 25px;
+    }
+
+    .about-box h3{
+
+        font-size:34px;
+    }
+
+    .stats-grid{
+
+        grid-template-columns:1fr 1fr;
+    }
+
+    .stat-number{
+
+        font-size:26px;
+    }
+
+    .stat-label{
+
+        font-size:7px;
+    }
+
+    .review-card{
+
+        padding:19px;
+    }
+
+    .contact-card{
+
+        padding:27px 19px;
+    }
+
+}
+
 
     </style>
 
