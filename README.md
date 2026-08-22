@@ -1,5 +1,3 @@
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +28,7 @@
 
     <meta property="og:type"
           content="website">
+
 
     <title>
         M|&|K Accounts | GST, Income Tax, TDS & Accounting Services
@@ -67,6 +66,7 @@
 
     {
         "@context": "https://schema.org",
+
         "@type": "AccountingService",
 
         "name": "M|&|K Accounts",
@@ -114,18 +114,12 @@
 
     <!-- =========================================================
          FAVICON
+         Uses logo.jpeg from GitHub
     ========================================================== -->
 
     <link rel="icon"
-          href="data:image/svg+xml,
-          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-          <circle cx='50' cy='50' r='48' fill='black'/>
-          <text x='50' y='62'
-          text-anchor='middle'
-          font-family='Georgia'
-          font-size='30'
-          fill='white'>MK</text>
-          </svg>">
+          type="image/jpeg"
+          href="logo.jpeg">
 
 
     <!-- =========================================================
@@ -285,7 +279,9 @@
         }
 
 
-        /* BRAND */
+        /* =========================================================
+           BRAND
+        ========================================================== */
 
         .brand {
 
@@ -300,15 +296,16 @@
         }
 
 
+        /*
+           ACTUAL LOGO IMAGE
+           Loaded from logo.jpeg
+        */
+
         .brand-logo {
 
-            width: 39px;
+            width: 42px;
 
-            height: 39px;
-
-            border: 2px solid white;
-
-            border-radius: 50%;
+            height: 42px;
 
             display: flex;
 
@@ -316,11 +313,22 @@
 
             justify-content: center;
 
-            font-family: var(--serif);
+            flex-shrink: 0;
 
-            font-size: 12px;
+            overflow: hidden;
 
-            font-weight: 700;
+        }
+
+
+        .brand-logo img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+
+            display: block;
 
         }
 
@@ -362,7 +370,9 @@
         }
 
 
-        /* NAVIGATION */
+        /* =========================================================
+           NAVIGATION
+        ========================================================== */
 
         .nav-links {
 
@@ -636,6 +646,8 @@
 
             margin-top: 50px;
 
+            flex-wrap: wrap;
+
         }
 
 
@@ -718,32 +730,24 @@
                 floatLogo 5s
                 ease-in-out infinite;
 
+            overflow: hidden;
+
         }
 
 
-        .floating-logo-inner {
+        /*
+           ACTUAL LOGO IN FLOATING BOX
+        */
 
-            width: 125px;
+        .floating-logo-image {
 
-            height: 125px;
+            width: 145px;
 
-            background: black;
+            height: 145px;
 
-            color: white;
+            object-fit: contain;
 
-            border-radius: 50%;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            font-family: var(--serif);
-
-            font-size: 38px;
-
-            font-weight: 600;
+            display: block;
 
         }
 
@@ -824,17 +828,15 @@
         }
 
 
+        /*
+           ACTUAL LOGO ON BUSINESS CARD
+        */
+
         .card-logo {
 
-            width: 70px;
+            width: 80px;
 
-            height: 70px;
-
-            background: black;
-
-            color: white;
-
-            border-radius: 50%;
+            height: 80px;
 
             margin:
                 5px auto
@@ -846,10 +848,20 @@
 
             justify-content: center;
 
-            font-family:
-                var(--serif);
+            overflow: hidden;
 
-            font-size: 23px;
+        }
+
+
+        .card-logo img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+
+            display: block;
 
         }
 
@@ -2441,9 +2453,9 @@
 
             .brand-logo {
 
-                width: 34px;
+                width: 36px;
 
-                height: 34px;
+                height: 36px;
 
             }
 
@@ -2498,13 +2510,11 @@
             }
 
 
-            .floating-logo-inner {
+            .floating-logo-image {
 
-                width: 90px;
+                width: 95px;
 
-                height: 90px;
-
-                font-size: 27px;
+                height: 95px;
 
             }
 
@@ -2517,6 +2527,15 @@
                     17px
                     18px
                     14px;
+
+            }
+
+
+            .card-logo {
+
+                width: 65px;
+
+                height: 65px;
 
             }
 
@@ -2692,9 +2711,16 @@
             <a href="#home"
                class="brand">
 
+
+                <!-- ACTUAL GITHUB LOGO -->
+
                 <div class="brand-logo">
-                    M|K
+
+                    <img src="logo.jpeg"
+                         alt="M|&|K Accounts Logo">
+
                 </div>
+
 
                 <div class="brand-text">
 
@@ -2901,16 +2927,20 @@
 
 
 
-            <!-- HERO VISUAL -->
+            <!-- =================================================
+                 HERO VISUAL
+            ================================================== -->
 
             <div class="hero-visual reveal">
 
 
+                <!-- ACTUAL GITHUB LOGO -->
+
                 <div class="floating-logo">
 
-                    <div class="floating-logo-inner">
-                        M|K
-                    </div>
+                    <img src="logo.jpeg"
+                         alt="M|&|K Accounts Logo"
+                         class="floating-logo-image">
 
                 </div>
 
@@ -2954,8 +2984,13 @@
                     </div>
 
 
+                    <!-- ACTUAL GITHUB LOGO -->
+
                     <div class="card-logo">
-                        M|K
+
+                        <img src="logo.jpeg"
+                             alt="M|&|K Accounts Logo">
+
                     </div>
 
 
@@ -2989,7 +3024,7 @@
 
                         <span>
 
-                            Remote Operations | Haryana
+                            Haryana | Remote Operations
 
                         </span>
 
@@ -3055,8 +3090,6 @@
         <div class="services-grid">
 
 
-            <!-- GST -->
-
             <article class="service-card reveal">
 
                 <span class="service-number">
@@ -3094,8 +3127,6 @@
             </article>
 
 
-
-            <!-- INCOME TAX -->
 
             <article class="service-card reveal">
 
@@ -3135,8 +3166,6 @@
 
 
 
-            <!-- TDS -->
-
             <article class="service-card reveal">
 
                 <span class="service-number">
@@ -3174,8 +3203,6 @@
             </article>
 
 
-
-            <!-- ACCOUNTING -->
 
             <article class="service-card reveal">
 
@@ -3215,8 +3242,6 @@
 
 
 
-            <!-- AUDIT -->
-
             <article class="service-card reveal">
 
                 <span class="service-number">
@@ -3255,8 +3280,6 @@
             </article>
 
 
-
-            <!-- REGISTRATION -->
 
             <article class="service-card reveal">
 
@@ -4043,7 +4066,6 @@
 
             <div class="faq-item">
 
-
                 <button class="faq-question">
 
                     What areas do you currently serve?
@@ -4067,13 +4089,11 @@
 
                 </div>
 
-
             </div>
 
 
 
             <div class="faq-item">
-
 
                 <button class="faq-question">
 
@@ -4097,13 +4117,11 @@
 
                 </div>
 
-
             </div>
 
 
 
             <div class="faq-item">
-
 
                 <button class="faq-question">
 
@@ -4128,13 +4146,11 @@
 
                 </div>
 
-
             </div>
 
 
 
             <div class="faq-item">
-
 
                 <button class="faq-question">
 
@@ -4158,13 +4174,11 @@
 
                 </div>
 
-
             </div>
 
 
 
             <div class="faq-item">
-
 
                 <button class="faq-question">
 
@@ -4188,13 +4202,11 @@
 
                 </div>
 
-
             </div>
 
 
 
             <div class="faq-item">
-
 
                 <button class="faq-question">
 
@@ -4218,7 +4230,6 @@
                     </p>
 
                 </div>
-
 
             </div>
 
@@ -4381,7 +4392,7 @@
                         <div>
 
                             <div class="contact-item-label">
-                                Current Service Area
+                                Current Service Area / Work Location
                             </div>
 
                             <div class="contact-item-value">
@@ -4452,7 +4463,9 @@
 
 
 
-            <!-- CONTACT CARD -->
+            <!-- =================================================
+                 CONTACT CARD
+            ================================================== -->
 
             <div class="contact-card reveal">
 
@@ -4592,8 +4605,13 @@
                    class="brand">
 
 
+                    <!-- ACTUAL GITHUB LOGO -->
+
                     <div class="brand-logo">
-                        M|K
+
+                        <img src="logo.jpeg"
+                             alt="M|&|K Accounts Logo">
+
                     </div>
 
 
@@ -4695,30 +4713,22 @@
 
 
                     <a href="tel:+919817571705">
-
                         +91 98175 71705
-
                     </a>
 
 
                     <a href="tel:+919992075501">
-
                         +91 99920 75501
-
                     </a>
 
 
                     <a href="mailto:Info@mkaccounts.in">
-
                         Info@mkaccounts.in
-
                     </a>
 
 
                     <a href="mailto:ta.solution.hisar@gmail.com">
-
                         ta.solution.hisar@gmail.com
-
                     </a>
 
 
@@ -5189,4 +5199,3 @@ document
 </body>
 
 </html>
-```
