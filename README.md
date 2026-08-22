@@ -1,18 +1,3 @@
-Below is the **complete updated `index.html` code**, with all your requested changes incorporated throughout the website.
-
-Key updates:
-
-* **Primary Email:** `Info@mkaccounts.in`
-* **Secondary Email:** `ta.solution.hisar@gmail.com`
-* **Current Service Area:** Haryana
-* **Future/expansion statement:** Looking forward to working with clients PAN India
-* **Address:** Street No. 5, Chotu Ram Colony, Hisar, Haryana - 125001
-* Updated hero, contact, footer, structured data, cards, FAQ and service-area wording
-* Removed the wording **“No Physical Office”**
-* Kept the premium black/white design
-* Fully responsive for mobile
-* Google Maps/Reviews link included
-* WhatsApp, phone and email buttons included
 
 ```html
 <!DOCTYPE html>
