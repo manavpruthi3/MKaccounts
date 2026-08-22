@@ -59,6 +59,18 @@
 
 
     <!-- =========================================================
+         FAVICON - USING LOGO.JPEG
+    ========================================================== -->
+
+    <link rel="icon"
+          type="image/jpeg"
+          href="./logo.jpeg?v=2">
+
+    <link rel="apple-touch-icon"
+          href="./logo.jpeg?v=2">
+
+
+    <!-- =========================================================
          STRUCTURED DATA
     ========================================================== -->
 
@@ -66,7 +78,6 @@
 
     {
         "@context": "https://schema.org",
-
         "@type": "AccountingService",
 
         "name": "M|&|K Accounts",
@@ -113,16 +124,6 @@
 
 
     <!-- =========================================================
-         FAVICON
-         Uses logo.jpeg from GitHub
-    ========================================================== -->
-
-    <link rel="icon"
-          type="image/jpeg"
-          href="logo.jpeg">
-
-
-    <!-- =========================================================
          CSS
     ========================================================== -->
 
@@ -150,7 +151,6 @@
             --sans: "DM Sans", Arial, sans-serif;
 
             --container: 1180px;
-
         }
 
 
@@ -181,32 +181,23 @@
             line-height: 1.6;
 
             overflow-x: hidden;
-
         }
 
 
         a {
-
             text-decoration: none;
-
             color: inherit;
-
         }
 
 
         button {
-
             font-family: inherit;
-
         }
 
 
         img {
-
             max-width: 100%;
-
             display: block;
-
         }
 
 
@@ -218,7 +209,6 @@
             );
 
             margin: auto;
-
         }
 
 
@@ -231,7 +221,6 @@
             position: fixed;
 
             top: 0;
-
             left: 0;
 
             width: 100%;
@@ -242,27 +231,27 @@
 
             backdrop-filter: blur(16px);
 
-            border-bottom: 1px solid rgba(
-                255,
-                255,
-                255,
-                0.08
-            );
+            border-bottom:
+                1px solid rgba(
+                    255,
+                    255,
+                    255,
+                    0.08
+                );
 
             transition: .3s ease;
-
         }
 
 
         header.scrolled {
 
-            background: rgba(
-                8,
-                8,
-                8,
-                0.98
-            );
-
+            background:
+                rgba(
+                    8,
+                    8,
+                    8,
+                    0.98
+                );
         }
 
 
@@ -274,13 +263,13 @@
 
             align-items: center;
 
-            justify-content: space-between;
-
+            justify-content:
+                space-between;
         }
 
 
         /* =========================================================
-           BRAND
+           REAL LOGO - HEADER
         ========================================================== */
 
         .brand {
@@ -292,20 +281,14 @@
             gap: 12px;
 
             color: white;
-
         }
 
 
-        /*
-           ACTUAL LOGO IMAGE
-           Loaded from logo.jpeg
-        */
-
         .brand-logo {
 
-            width: 42px;
+            width: 45px;
 
-            height: 42px;
+            height: 45px;
 
             display: flex;
 
@@ -313,10 +296,11 @@
 
             justify-content: center;
 
-            flex-shrink: 0;
-
             overflow: hidden;
 
+            flex-shrink: 0;
+
+            background: transparent;
         }
 
 
@@ -329,7 +313,6 @@
             object-fit: contain;
 
             display: block;
-
         }
 
 
@@ -340,7 +323,6 @@
             flex-direction: column;
 
             line-height: 1;
-
         }
 
 
@@ -351,7 +333,6 @@
             font-weight: 700;
 
             letter-spacing: 1px;
-
         }
 
 
@@ -366,7 +347,6 @@
             font-weight: 600;
 
             letter-spacing: 1.5px;
-
         }
 
 
@@ -385,34 +365,32 @@
             color: #bdbdbd;
 
             font-size: 14px;
-
         }
 
 
         .nav-links a {
 
             transition: .25s ease;
-
         }
 
 
         .nav-links a:hover {
 
             color: white;
-
         }
 
 
         .nav-cta {
 
-            border: 1px solid #777;
+            border:
+                1px solid #777;
 
-            padding: 10px 22px;
+            padding:
+                10px 22px;
 
             color: white !important;
 
             transition: .3s ease;
-
         }
 
 
@@ -423,7 +401,6 @@
             color: black !important;
 
             border-color: white;
-
         }
 
 
@@ -440,7 +417,6 @@
             font-size: 22px;
 
             cursor: pointer;
-
         }
 
 
@@ -468,7 +444,6 @@
             display: flex;
 
             align-items: center;
-
         }
 
 
@@ -485,10 +460,7 @@
             align-items: center;
 
             padding:
-                80px
-                0
-                90px;
-
+                80px 0 90px;
         }
 
 
@@ -505,7 +477,6 @@
             font-size: 12px;
 
             margin-bottom: 28px;
-
         }
 
 
@@ -514,7 +485,6 @@
             color: white;
 
             letter-spacing: 2px;
-
         }
 
 
@@ -534,14 +504,12 @@
             font-weight: 600;
 
             letter-spacing: -2px;
-
         }
 
 
         .hero h1 span {
 
             color: #777;
-
         }
 
 
@@ -556,7 +524,6 @@
             max-width: 590px;
 
             margin-top: 30px;
-
         }
 
 
@@ -569,7 +536,6 @@
             gap: 14px;
 
             margin-top: 35px;
-
         }
 
 
@@ -586,10 +552,10 @@
             min-height: 50px;
 
             padding:
-                0
-                25px;
+                0 25px;
 
-            border: 1px solid #555;
+            border:
+                1px solid #555;
 
             font-size: 13px;
 
@@ -598,7 +564,6 @@
             transition: .3s ease;
 
             cursor: pointer;
-
         }
 
 
@@ -609,7 +574,6 @@
             color: black;
 
             border-color: white;
-
         }
 
 
@@ -618,14 +582,12 @@
             background: transparent;
 
             color: white;
-
         }
 
 
         .btn-outline {
 
             color: white;
-
         }
 
 
@@ -634,7 +596,6 @@
             background: white;
 
             color: black;
-
         }
 
 
@@ -647,7 +608,6 @@
             margin-top: 50px;
 
             flex-wrap: wrap;
-
         }
 
 
@@ -657,7 +617,6 @@
                 1px solid #444;
 
             padding-left: 15px;
-
         }
 
 
@@ -670,7 +629,6 @@
             letter-spacing: 1.5px;
 
             margin-bottom: 5px;
-
         }
 
 
@@ -679,12 +637,11 @@
             color: white;
 
             font-size: 13px;
-
         }
 
 
         /* =========================================================
-           HERO BUSINESS CARD
+           HERO VISUAL
         ========================================================== */
 
         .hero-visual {
@@ -698,9 +655,12 @@
             align-items: center;
 
             min-height: 520px;
-
         }
 
+
+        /* =========================================================
+           REAL LOGO - FLOATING
+        ========================================================== */
 
         .floating-logo {
 
@@ -722,6 +682,8 @@
 
             justify-content: center;
 
+            padding: 18px;
+
             box-shadow:
                 0 25px 70px
                 rgba(0,0,0,.35);
@@ -731,45 +693,38 @@
                 ease-in-out infinite;
 
             overflow: hidden;
-
         }
 
 
-        /*
-           ACTUAL LOGO IN FLOATING BOX
-        */
+        .floating-logo img {
 
-        .floating-logo-image {
+            width: 100%;
 
-            width: 145px;
-
-            height: 145px;
+            height: 100%;
 
             object-fit: contain;
 
             display: block;
-
         }
 
 
         @keyframes floatLogo {
 
             0%,100% {
-
                 transform:
                     translateY(0);
-
             }
 
             50% {
-
                 transform:
                     translateY(-12px);
-
             }
-
         }
 
+
+        /* =========================================================
+           BUSINESS CARD
+        ========================================================== */
 
         .business-card {
 
@@ -783,16 +738,13 @@
             color: black;
 
             padding:
-                22px
-                28px
-                18px;
+                22px 28px 18px;
 
             margin-top: 125px;
 
             box-shadow:
                 0 30px 80px
                 rgba(0,0,0,.4);
-
         }
 
 
@@ -810,7 +762,6 @@
                 serif;
 
             font-size: 17px;
-
         }
 
 
@@ -824,13 +775,12 @@
             font-size: 13px;
 
             margin-top: 3px;
-
         }
 
 
-        /*
-           ACTUAL LOGO ON BUSINESS CARD
-        */
+        /* =========================================================
+           REAL LOGO - BUSINESS CARD
+        ========================================================== */
 
         .card-logo {
 
@@ -839,8 +789,7 @@
             height: 80px;
 
             margin:
-                5px auto
-                12px;
+                5px auto 12px;
 
             display: flex;
 
@@ -850,6 +799,7 @@
 
             overflow: hidden;
 
+            background: transparent;
         }
 
 
@@ -862,7 +812,6 @@
             object-fit: contain;
 
             display: block;
-
         }
 
 
@@ -877,7 +826,6 @@
             letter-spacing: 2px;
 
             margin-bottom: 16px;
-
         }
 
 
@@ -888,7 +836,6 @@
             font-size: 14px;
 
             margin-bottom: 17px;
-
         }
 
 
@@ -897,7 +844,6 @@
             display: block;
 
             margin-bottom: 4px;
-
         }
 
 
@@ -907,8 +853,7 @@
                 1px solid #c5c5c5;
 
             margin:
-                0 -28px
-                -18px;
+                0 -28px -18px;
 
             padding:
                 12px 25px;
@@ -924,7 +869,6 @@
 
             background:
                 #dddcd7;
-
         }
 
 
@@ -935,7 +879,6 @@
         section {
 
             padding: 110px 0;
-
         }
 
 
@@ -949,18 +892,15 @@
 
             font-weight: 700;
 
-            text-transform:
-                uppercase;
+            text-transform: uppercase;
 
             margin-bottom: 18px;
-
         }
 
 
         .section-title {
 
-            font-family:
-                var(--serif);
+            font-family: var(--serif);
 
             font-size:
                 clamp(
@@ -974,7 +914,6 @@
             font-weight: 600;
 
             letter-spacing: -1.5px;
-
         }
 
 
@@ -989,7 +928,6 @@
             font-size: 16px;
 
             line-height: 1.8;
-
         }
 
 
@@ -1000,7 +938,6 @@
         .services-section {
 
             background: white;
-
         }
 
 
@@ -1015,7 +952,6 @@
                 flex-end;
 
             margin-bottom: 65px;
-
         }
 
 
@@ -1031,16 +967,13 @@
 
             border-left:
                 1px solid var(--border);
-
         }
 
 
         .service-card {
 
             padding:
-                38px
-                32px
-                42px;
+                38px 32px 42px;
 
             min-height: 280px;
 
@@ -1055,7 +988,6 @@
             position: relative;
 
             background: white;
-
         }
 
 
@@ -1065,7 +997,6 @@
 
             transform:
                 translateY(-4px);
-
         }
 
 
@@ -1084,7 +1015,6 @@
             justify-content: center;
 
             margin-bottom: 25px;
-
         }
 
 
@@ -1099,19 +1029,16 @@
             font-size: 11px;
 
             color: #bbb;
-
         }
 
 
         .service-card h3 {
 
-            font-family:
-                var(--serif);
+            font-family: var(--serif);
 
             font-size: 21px;
 
             margin-bottom: 13px;
-
         }
 
 
@@ -1122,7 +1049,6 @@
             font-size: 14px;
 
             line-height: 1.75;
-
         }
 
 
@@ -1139,7 +1065,6 @@
             gap: 8px;
 
             align-items: center;
-
         }
 
 
@@ -1152,7 +1077,6 @@
             background: #f5f5f3;
 
             padding: 75px 0;
-
         }
 
 
@@ -1167,7 +1091,6 @@
 
             background:
                 #d8d8d5;
-
         }
 
 
@@ -1180,7 +1103,6 @@
                 25px 30px;
 
             text-align: center;
-
         }
 
 
@@ -1192,7 +1114,6 @@
             font-size: 40px;
 
             font-weight: 600;
-
         }
 
 
@@ -1202,11 +1123,9 @@
 
             font-size: 10px;
 
-            text-transform:
-                uppercase;
+            text-transform: uppercase;
 
             letter-spacing: 1px;
-
         }
 
 
@@ -1217,7 +1136,6 @@
         .about-section {
 
             background: #f5f5f3;
-
         }
 
 
@@ -1231,7 +1149,6 @@
             gap: 100px;
 
             align-items: center;
-
         }
 
 
@@ -1248,8 +1165,7 @@
 
             display: flex;
 
-            flex-direction:
-                column;
+            flex-direction: column;
 
             justify-content:
                 space-between;
@@ -1257,7 +1173,6 @@
             position: relative;
 
             overflow: hidden;
-
         }
 
 
@@ -1285,7 +1200,6 @@
                 );
 
             font-weight: 700;
-
         }
 
 
@@ -1296,7 +1210,6 @@
             letter-spacing: 2px;
 
             font-size: 10px;
-
         }
 
 
@@ -1310,7 +1223,6 @@
             line-height: 1.1;
 
             position: relative;
-
         }
 
 
@@ -1321,7 +1233,6 @@
             font-size: 14px;
 
             position: relative;
-
         }
 
 
@@ -1334,7 +1245,6 @@
             line-height: 1.9;
 
             margin-top: 25px;
-
         }
 
 
@@ -1348,7 +1258,6 @@
                 1fr 1fr;
 
             gap: 22px 30px;
-
         }
 
 
@@ -1360,7 +1269,6 @@
 
             align-items:
                 flex-start;
-
         }
 
 
@@ -1385,7 +1293,6 @@
             font-size: 11px;
 
             flex-shrink: 0;
-
         }
 
 
@@ -1396,7 +1303,6 @@
             font-size: 14px;
 
             margin-bottom: 3px;
-
         }
 
 
@@ -1407,7 +1313,6 @@
             color: #777;
 
             font-size: 12px;
-
         }
 
 
@@ -1420,23 +1325,18 @@
             background: black;
 
             color: white;
-
         }
 
 
-        .process-section
-        .section-kicker {
+        .process-section .section-kicker {
 
             color: #a68b60;
-
         }
 
 
-        .process-section
-        .section-intro {
+        .process-section .section-intro {
 
             color: #888;
-
         }
 
 
@@ -1454,23 +1354,19 @@
 
             border-left:
                 1px solid #292929;
-
         }
 
 
         .process-card {
 
             padding:
-                35px
-                30px
-                45px;
+                35px 30px 45px;
 
             border-right:
                 1px solid #292929;
 
             border-bottom:
                 1px solid #292929;
-
         }
 
 
@@ -1484,7 +1380,6 @@
             color: #555;
 
             margin-bottom: 35px;
-
         }
 
 
@@ -1496,7 +1391,6 @@
             font-size: 22px;
 
             margin-bottom: 12px;
-
         }
 
 
@@ -1507,7 +1401,6 @@
             font-size: 13px;
 
             line-height: 1.75;
-
         }
 
 
@@ -1518,7 +1411,6 @@
         .reviews-section {
 
             background: #f5f5f3;
-
         }
 
 
@@ -1533,7 +1425,6 @@
                 flex-end;
 
             margin-bottom: 55px;
-
         }
 
 
@@ -1554,7 +1445,6 @@
             gap: 20px;
 
             transition: .3s ease;
-
         }
 
 
@@ -1566,7 +1456,6 @@
             box-shadow:
                 0 10px 30px
                 rgba(0,0,0,.06);
-
         }
 
 
@@ -1578,7 +1467,6 @@
             font-size: 32px;
 
             font-weight: 600;
-
         }
 
 
@@ -1587,7 +1475,6 @@
             font-size: 12px;
 
             letter-spacing: 2px;
-
         }
 
 
@@ -1596,7 +1483,6 @@
             color: #777;
 
             font-size: 10px;
-
         }
 
 
@@ -1608,7 +1494,6 @@
                 1fr 1fr;
 
             gap: 20px;
-
         }
 
 
@@ -1622,7 +1507,6 @@
             padding: 28px;
 
             transition: .3s ease;
-
         }
 
 
@@ -1634,7 +1518,6 @@
             box-shadow:
                 0 15px 40px
                 rgba(0,0,0,.05);
-
         }
 
 
@@ -1649,7 +1532,6 @@
                 flex-start;
 
             margin-bottom: 22px;
-
         }
 
 
@@ -1660,7 +1542,6 @@
             align-items: center;
 
             gap: 13px;
-
         }
 
 
@@ -1685,7 +1566,6 @@
             font-size: 12px;
 
             font-weight: 600;
-
         }
 
 
@@ -1694,7 +1574,6 @@
             font-size: 13px;
 
             font-weight: 700;
-
         }
 
 
@@ -1703,7 +1582,6 @@
             color: #999;
 
             font-size: 10px;
-
         }
 
 
@@ -1712,7 +1590,6 @@
             font-size: 11px;
 
             letter-spacing: 1px;
-
         }
 
 
@@ -1723,7 +1600,6 @@
             font-size: 13px;
 
             line-height: 1.8;
-
         }
 
 
@@ -1734,7 +1610,6 @@
         .faq-section {
 
             background: white;
-
         }
 
 
@@ -1744,7 +1619,6 @@
 
             margin:
                 55px auto 0;
-
         }
 
 
@@ -1752,7 +1626,6 @@
 
             border-top:
                 1px solid #ddd;
-
         }
 
 
@@ -1760,7 +1633,6 @@
 
             border-bottom:
                 1px solid #ddd;
-
         }
 
 
@@ -1789,7 +1661,6 @@
             font-size: 19px;
 
             cursor: pointer;
-
         }
 
 
@@ -1801,7 +1672,6 @@
             font-size: 12px;
 
             transition: .3s ease;
-
         }
 
 
@@ -1813,7 +1683,6 @@
 
             transition:
                 max-height .35s ease;
-
         }
 
 
@@ -1828,7 +1697,6 @@
             padding-bottom: 25px;
 
             max-width: 760px;
-
         }
 
 
@@ -1837,7 +1705,6 @@
 
             transform:
                 rotate(45deg);
-
         }
 
 
@@ -1850,7 +1717,6 @@
             background: black;
 
             color: white;
-
         }
 
 
@@ -1862,30 +1728,24 @@
                 1fr .9fr;
 
             gap: 100px;
-
         }
 
 
-        .contact-section
-        .section-kicker {
+        .contact-section .section-kicker {
 
             color: #a68b60;
-
         }
 
 
-        .contact-section
-        .section-intro {
+        .contact-section .section-intro {
 
             color: #8d8d8d;
-
         }
 
 
         .contact-details {
 
             margin-top: 45px;
-
         }
 
 
@@ -1899,7 +1759,6 @@
 
             border-bottom:
                 1px solid #272727;
-
         }
 
 
@@ -1910,7 +1769,6 @@
             color: #aaa;
 
             margin-top: 3px;
-
         }
 
 
@@ -1924,7 +1782,6 @@
 
             text-transform:
                 uppercase;
-
         }
 
 
@@ -1933,7 +1790,6 @@
             margin-top: 3px;
 
             font-size: 14px;
-
         }
 
 
@@ -1948,7 +1804,6 @@
 
             align-self:
                 flex-start;
-
         }
 
 
@@ -1960,7 +1815,6 @@
             font-size: 31px;
 
             margin-bottom: 10px;
-
         }
 
 
@@ -1973,7 +1827,6 @@
             line-height: 1.7;
 
             margin-bottom: 25px;
-
         }
 
 
@@ -1982,56 +1835,46 @@
             display: grid;
 
             gap: 10px;
-
         }
 
 
         .contact-buttons .btn {
 
             width: 100%;
-
         }
 
 
-        .contact-buttons
-        .btn-primary {
+        .contact-buttons .btn-primary {
 
             background: black;
 
             color: white;
 
             border-color: black;
-
         }
 
 
-        .contact-buttons
-        .btn-primary:hover {
+        .contact-buttons .btn-primary:hover {
 
             background: transparent;
 
             color: black;
-
         }
 
 
-        .contact-buttons
-        .btn-outline {
+        .contact-buttons .btn-outline {
 
             color: black;
 
             border-color: #aaa;
-
         }
 
 
-        .contact-buttons
-        .btn-outline:hover {
+        .contact-buttons .btn-outline:hover {
 
             background: black;
 
             color: white;
-
         }
 
 
@@ -2050,7 +1893,6 @@
 
             padding:
                 50px 0 25px;
-
         }
 
 
@@ -2067,7 +1909,6 @@
 
             border-bottom:
                 1px solid #222;
-
         }
 
 
@@ -2082,7 +1923,6 @@
             font-size: 12px;
 
             line-height: 1.8;
-
         }
 
 
@@ -2098,7 +1938,6 @@
             color: #888;
 
             margin-bottom: 17px;
-
         }
 
 
@@ -2111,14 +1950,12 @@
             color: #aaa;
 
             font-size: 12px;
-
         }
 
 
         .footer-links a:hover {
 
             color: white;
-
         }
 
 
@@ -2136,7 +1973,6 @@
             color: #555;
 
             font-size: 10px;
-
         }
 
 
@@ -2177,7 +2013,6 @@
                 rgba(0,0,0,.2);
 
             transition: .3s ease;
-
         }
 
 
@@ -2186,7 +2021,6 @@
             transform:
                 translateY(-4px)
                 scale(1.04);
-
         }
 
 
@@ -2228,7 +2062,6 @@
             transition: .3s ease;
 
             z-index: 999;
-
         }
 
 
@@ -2237,7 +2070,6 @@
             opacity: 1;
 
             visibility: visible;
-
         }
 
 
@@ -2255,7 +2087,6 @@
             transition:
                 opacity .8s ease,
                 transform .8s ease;
-
         }
 
 
@@ -2265,7 +2096,6 @@
 
             transform:
                 translateY(0);
-
         }
 
 
@@ -2274,7 +2104,6 @@
         ========================================================== */
 
         @media(max-width:900px) {
-
 
             .nav-links {
 
@@ -2302,14 +2131,12 @@
 
                 border-bottom:
                     1px solid #222;
-
             }
 
 
             .nav-links.active {
 
                 display: flex;
-
             }
 
 
@@ -2319,7 +2146,6 @@
 
                 border-bottom:
                     1px solid #222;
-
             }
 
 
@@ -2328,14 +2154,12 @@
                 text-align: center;
 
                 margin-top: 10px;
-
             }
 
 
             .menu-btn {
 
                 display: block;
-
             }
 
 
@@ -2345,21 +2169,18 @@
                     1fr;
 
                 gap: 60px;
-
             }
 
 
             .hero-visual {
 
                 min-height: 430px;
-
             }
 
 
             .floating-logo {
 
                 right: 10%;
-
             }
 
 
@@ -2367,7 +2188,6 @@
 
                 grid-template-columns:
                     1fr 1fr;
-
             }
 
 
@@ -2377,7 +2197,6 @@
                     1fr;
 
                 gap: 50px;
-
             }
 
 
@@ -2385,7 +2204,6 @@
 
                 grid-template-columns:
                     1fr 1fr;
-
             }
 
 
@@ -2395,7 +2213,6 @@
                     1fr;
 
                 gap: 50px;
-
             }
 
 
@@ -2403,14 +2220,12 @@
 
                 grid-template-columns:
                     1fr 1fr;
-
             }
 
         }
 
 
         @media(max-width:650px) {
-
 
             .container {
 
@@ -2419,58 +2234,50 @@
                         calc(100% - 30px),
                         var(--container)
                     );
-
             }
 
 
             section {
 
                 padding: 80px 0;
-
             }
 
 
             .navbar {
 
                 height: 65px;
-
             }
 
 
             .nav-links {
 
                 top: 65px;
-
             }
 
 
             .brand-name {
 
                 font-size: 13px;
-
             }
 
 
             .brand-logo {
 
-                width: 36px;
+                width: 38px;
 
-                height: 36px;
-
+                height: 38px;
             }
 
 
             .hero {
 
                 padding-top: 65px;
-
             }
 
 
             .hero-grid {
 
                 padding: 65px 0;
-
             }
 
 
@@ -2479,14 +2286,12 @@
                 font-size: 51px;
 
                 letter-spacing: -1px;
-
             }
 
 
             .hero-description {
 
                 font-size: 15px;
-
             }
 
 
@@ -2495,9 +2300,10 @@
                 gap: 20px;
 
                 flex-wrap: wrap;
-
             }
 
+
+            /* MOBILE FLOATING LOGO */
 
             .floating-logo {
 
@@ -2507,15 +2313,7 @@
 
                 right: 2%;
 
-            }
-
-
-            .floating-logo-image {
-
-                width: 95px;
-
-                height: 95px;
-
+                padding: 12px;
             }
 
 
@@ -2527,7 +2325,6 @@
                     17px
                     18px
                     14px;
-
             }
 
 
@@ -2536,28 +2333,24 @@
                 width: 65px;
 
                 height: 65px;
-
             }
 
 
             .card-title {
 
                 font-size: 20px;
-
             }
 
 
             .card-top {
 
                 font-size: 13px;
-
             }
 
 
             .card-phone {
 
                 font-size: 10px;
-
             }
 
 
@@ -2570,11 +2363,9 @@
                 margin-bottom: -14px;
 
                 padding:
-                    10px
-                    14px;
+                    10px 14px;
 
                 font-size: 8px;
-
             }
 
 
@@ -2582,7 +2373,6 @@
             .reviews-header {
 
                 display: block;
-
             }
 
 
@@ -2590,14 +2380,12 @@
 
                 grid-template-columns:
                     1fr;
-
             }
 
 
             .service-card {
 
                 min-height: auto;
-
             }
 
 
@@ -2605,7 +2393,6 @@
 
                 grid-template-columns:
                     1fr;
-
             }
 
 
@@ -2613,7 +2400,6 @@
 
                 grid-template-columns:
                     1fr;
-
             }
 
 
@@ -2621,7 +2407,6 @@
 
                 grid-template-columns:
                     1fr 1fr;
-
             }
 
 
@@ -2629,7 +2414,6 @@
 
                 grid-template-columns:
                     1fr;
-
             }
 
 
@@ -2638,7 +2422,6 @@
                 margin-top: 25px;
 
                 width: fit-content;
-
             }
 
 
@@ -2646,7 +2429,6 @@
 
                 padding:
                     30px 25px;
-
             }
 
 
@@ -2654,7 +2436,6 @@
 
                 grid-template-columns:
                     1fr;
-
             }
 
 
@@ -2662,7 +2443,6 @@
 
                 flex-direction:
                     column;
-
             }
 
 
@@ -2675,7 +2455,6 @@
                 right: 18px;
 
                 bottom: 18px;
-
             }
 
 
@@ -2684,7 +2463,6 @@
                 right: 18px;
 
                 bottom: 80px;
-
             }
 
         }
@@ -2708,15 +2486,14 @@
         <nav class="navbar">
 
 
+            <!-- REAL LOGO FROM GITHUB -->
+
             <a href="#home"
                class="brand">
 
-
-                <!-- ACTUAL GITHUB LOGO -->
-
                 <div class="brand-logo">
 
-                    <img src="logo.jpeg"
+                    <img src="./logo.jpeg?v=2"
                          alt="M|&|K Accounts Logo">
 
                 </div>
@@ -2927,20 +2704,17 @@
 
 
 
-            <!-- =================================================
-                 HERO VISUAL
-            ================================================== -->
+            <!-- HERO VISUAL -->
 
             <div class="hero-visual reveal">
 
 
-                <!-- ACTUAL GITHUB LOGO -->
+                <!-- REAL LOGO FROM LOGO.JPEG -->
 
                 <div class="floating-logo">
 
-                    <img src="logo.jpeg"
-                         alt="M|&|K Accounts Logo"
-                         class="floating-logo-image">
+                    <img src="./logo.jpeg?v=2"
+                         alt="M|&|K Accounts Logo">
 
                 </div>
 
@@ -2984,11 +2758,11 @@
                     </div>
 
 
-                    <!-- ACTUAL GITHUB LOGO -->
+                    <!-- REAL LOGO FROM LOGO.JPEG -->
 
                     <div class="card-logo">
 
-                        <img src="logo.jpeg"
+                        <img src="./logo.jpeg?v=2"
                              alt="M|&|K Accounts Logo">
 
                     </div>
@@ -3024,7 +2798,7 @@
 
                         <span>
 
-                            Haryana | Remote Operations
+                            Remote Operations | Haryana
 
                         </span>
 
@@ -3127,7 +2901,6 @@
             </article>
 
 
-
             <article class="service-card reveal">
 
                 <span class="service-number">
@@ -3163,7 +2936,6 @@
                 </a>
 
             </article>
-
 
 
             <article class="service-card reveal">
@@ -3203,7 +2975,6 @@
             </article>
 
 
-
             <article class="service-card reveal">
 
                 <span class="service-number">
@@ -3239,7 +3010,6 @@
                 </a>
 
             </article>
-
 
 
             <article class="service-card reveal">
@@ -3278,7 +3048,6 @@
                 </a>
 
             </article>
-
 
 
             <article class="service-card reveal">
@@ -3334,9 +3103,7 @@
 
     <div class="container">
 
-
         <div class="stats-grid reveal">
-
 
             <div class="stat">
 
@@ -3389,7 +3156,6 @@
 
             </div>
 
-
         </div>
 
     </div>
@@ -3407,12 +3173,10 @@
 
     <div class="container">
 
-
         <div class="about-grid">
 
 
             <div class="about-box reveal">
-
 
                 <small>
                     M|&|K ACCOUNTS
@@ -3436,13 +3200,11 @@
 
                 </p>
 
-
             </div>
 
 
 
             <div class="about-content reveal">
-
 
                 <div class="section-kicker">
                     Why Choose Us
@@ -3476,9 +3238,7 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
-
                             <i class="fa-solid fa-check"></i>
-
                         </div>
 
                         <div>
@@ -3499,9 +3259,7 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
-
                             <i class="fa-solid fa-check"></i>
-
                         </div>
 
                         <div>
@@ -3522,9 +3280,7 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
-
                             <i class="fa-solid fa-check"></i>
-
                         </div>
 
                         <div>
@@ -3545,9 +3301,7 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
-
                             <i class="fa-solid fa-check"></i>
-
                         </div>
 
                         <div>
@@ -3568,9 +3322,7 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
-
                             <i class="fa-solid fa-earth-asia"></i>
-
                         </div>
 
                         <div>
@@ -3591,9 +3343,7 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
-
                             <i class="fa-solid fa-location-dot"></i>
-
                         </div>
 
                         <div>
@@ -3612,7 +3362,6 @@
 
 
                 </div>
-
 
             </div>
 
@@ -3804,7 +3553,6 @@
 
             </a>
 
-
         </div>
 
 
@@ -3814,9 +3562,7 @@
 
             <div class="review-card reveal">
 
-
                 <div class="review-top">
-
 
                     <div class="review-person">
 
@@ -3838,11 +3584,9 @@
 
                     </div>
 
-
                     <div class="review-stars">
                         ★★★★★
                     </div>
-
 
                 </div>
 
@@ -3856,16 +3600,13 @@
 
                 </p>
 
-
             </div>
 
 
 
             <div class="review-card reveal">
 
-
                 <div class="review-top">
-
 
                     <div class="review-person">
 
@@ -3887,11 +3628,9 @@
 
                     </div>
 
-
                     <div class="review-stars">
                         ★★★★★
                     </div>
-
 
                 </div>
 
@@ -3905,16 +3644,13 @@
 
                 </p>
 
-
             </div>
 
 
 
             <div class="review-card reveal">
 
-
                 <div class="review-top">
-
 
                     <div class="review-person">
 
@@ -3936,11 +3672,9 @@
 
                     </div>
 
-
                     <div class="review-stars">
                         ★★★★★
                     </div>
-
 
                 </div>
 
@@ -3954,16 +3688,13 @@
 
                 </p>
 
-
             </div>
 
 
 
             <div class="review-card reveal">
 
-
                 <div class="review-top">
-
 
                     <div class="review-person">
 
@@ -3985,11 +3716,9 @@
 
                     </div>
 
-
                     <div class="review-stars">
                         ★★★★★
                     </div>
-
 
                 </div>
 
@@ -4001,7 +3730,6 @@
                     with. They saved me both time and money.
 
                 </p>
-
 
             </div>
 
@@ -4031,9 +3759,7 @@
 
             </a>
 
-
         </div>
-
 
     </div>
 
@@ -4234,7 +3960,6 @@
             </div>
 
 
-
         </div>
 
     </div>
@@ -4287,8 +4012,6 @@
                 <div class="contact-details">
 
 
-                    <!-- MANAV -->
-
                     <div class="contact-item">
 
                         <i class="fa-solid fa-phone"></i>
@@ -4310,8 +4033,6 @@
 
                     </div>
 
-
-                    <!-- KRISH -->
 
                     <div class="contact-item">
 
@@ -4335,8 +4056,6 @@
                     </div>
 
 
-                    <!-- PRIMARY EMAIL -->
-
                     <div class="contact-item">
 
                         <i class="fa-regular fa-envelope"></i>
@@ -4358,8 +4077,6 @@
 
                     </div>
 
-
-                    <!-- SECONDARY EMAIL -->
 
                     <div class="contact-item">
 
@@ -4383,8 +4100,6 @@
                     </div>
 
 
-                    <!-- CURRENT SERVICE AREA -->
-
                     <div class="contact-item">
 
                         <i class="fa-solid fa-location-dot"></i>
@@ -4405,8 +4120,6 @@
 
                     </div>
 
-
-                    <!-- PAN INDIA -->
 
                     <div class="contact-item">
 
@@ -4429,8 +4142,6 @@
                     </div>
 
 
-                    <!-- ADDRESS -->
-
                     <div class="contact-item">
 
                         <i class="fa-solid fa-map-pin"></i>
@@ -4438,7 +4149,7 @@
                         <div>
 
                             <div class="contact-item-label">
-                                Address
+                                Office Address
                             </div>
 
                             <div class="contact-item-value">
@@ -4458,14 +4169,9 @@
 
                 </div>
 
-
             </div>
 
 
-
-            <!-- =================================================
-                 CONTACT CARD
-            ================================================== -->
 
             <div class="contact-card reveal">
 
@@ -4488,8 +4194,6 @@
                 <div class="contact-buttons">
 
 
-                    <!-- PRIMARY EMAIL -->
-
                     <a href="mailto:Info@mkaccounts.in"
                        class="btn btn-primary">
 
@@ -4500,8 +4204,6 @@
                     </a>
 
 
-                    <!-- SECONDARY EMAIL -->
-
                     <a href="mailto:ta.solution.hisar@gmail.com"
                        class="btn btn-outline">
 
@@ -4511,8 +4213,6 @@
 
                     </a>
 
-
-                    <!-- WHATSAPP MANAV -->
 
                     <a href="https://wa.me/919817571705"
                        target="_blank"
@@ -4526,8 +4226,6 @@
                     </a>
 
 
-                    <!-- WHATSAPP KRISH -->
-
                     <a href="https://wa.me/919992075501"
                        target="_blank"
                        rel="noopener"
@@ -4540,8 +4238,6 @@
                     </a>
 
 
-                    <!-- CALL -->
-
                     <a href="tel:+919817571705"
                        class="btn btn-outline">
 
@@ -4551,8 +4247,6 @@
 
                     </a>
 
-
-                    <!-- GOOGLE MAPS -->
 
                     <a href="https://maps.app.goo.gl/D4xPndjc2F5G5AT7A"
                        target="_blank"
@@ -4568,9 +4262,7 @@
 
                 </div>
 
-
             </div>
-
 
         </div>
 
@@ -4589,27 +4281,24 @@
 
 <footer>
 
-
     <div class="container">
 
 
         <div class="footer-top">
 
 
-            <!-- BRAND -->
-
             <div class="footer-brand">
 
+
+                <!-- REAL LOGO FROM GITHUB -->
 
                 <a href="#home"
                    class="brand">
 
 
-                    <!-- ACTUAL GITHUB LOGO -->
-
                     <div class="brand-logo">
 
-                        <img src="logo.jpeg"
+                        <img src="./logo.jpeg?v=2"
                              alt="M|&|K Accounts Logo">
 
                     </div>
@@ -4617,16 +4306,13 @@
 
                     <div class="brand-text">
 
-
                         <div class="brand-name">
                             M|&|K ACCOUNTS
                         </div>
 
-
                         <div class="brand-sub">
                             REMOTE OPERATIONS
                         </div>
-
 
                     </div>
 
@@ -4649,10 +4335,7 @@
 
 
 
-            <!-- SERVICES -->
-
             <div>
-
 
                 <div class="footer-title">
                     Services
@@ -4661,48 +4344,37 @@
 
                 <div class="footer-links">
 
-
                     <a href="#services">
                         GST Returns
                     </a>
-
 
                     <a href="#services">
                         Income Tax
                     </a>
 
-
                     <a href="#services">
                         TDS Compliance
                     </a>
-
 
                     <a href="#services">
                         Part-Time Accounting
                     </a>
 
-
                     <a href="#services">
                         Audit & Assurance
                     </a>
-
 
                     <a href="#services">
                         Business Registration
                     </a>
 
-
                 </div>
-
 
             </div>
 
 
 
-            <!-- CONTACT -->
-
             <div>
-
 
                 <div class="footer-title">
                     Contact
@@ -4711,26 +4383,21 @@
 
                 <div class="footer-links">
 
-
                     <a href="tel:+919817571705">
                         +91 98175 71705
                     </a>
-
 
                     <a href="tel:+919992075501">
                         +91 99920 75501
                     </a>
 
-
                     <a href="mailto:Info@mkaccounts.in">
                         Info@mkaccounts.in
                     </a>
 
-
                     <a href="mailto:ta.solution.hisar@gmail.com">
                         ta.solution.hisar@gmail.com
                     </a>
-
 
                     <a href="https://maps.app.goo.gl/D4xPndjc2F5G5AT7A"
                        target="_blank"
@@ -4740,9 +4407,7 @@
 
                     </a>
 
-
                 </div>
-
 
             </div>
 
@@ -4776,7 +4441,6 @@
 
 
     </div>
-
 
 </footer>
 
