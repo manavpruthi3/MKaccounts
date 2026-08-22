@@ -1,71 +1,156 @@
+Below is the **complete updated `index.html` code**, with all your requested changes incorporated throughout the website.
+
+Key updates:
+
+* **Primary Email:** `Info@mkaccounts.in`
+* **Secondary Email:** `ta.solution.hisar@gmail.com`
+* **Current Service Area:** Haryana
+* **Future/expansion statement:** Looking forward to working with clients PAN India
+* **Address:** Street No. 5, Chotu Ram Colony, Hisar, Haryana - 125001
+* Updated hero, contact, footer, structured data, cards, FAQ and service-area wording
+* Removed the wording **“No Physical Office”**
+* Kept the premium black/white design
+* Fully responsive for mobile
+* Google Maps/Reviews link included
+* WhatsApp, phone and email buttons included
+
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="M|&|K Accounts provides professional GST, Income Tax, TDS, accounting and financial compliance services. Remote accounting services delivered nationwide from Hisar, Haryana.">
+          content="M|&|K Accounts provides professional GST, Income Tax, TDS, bookkeeping and accounting services. Currently serving clients across Haryana and looking forward to working with clients PAN India.">
 
     <meta name="keywords"
-          content="M&K Accounts, M K Accounts, accounting services Hisar, GST filing Hisar, income tax consultant Hisar, TDS filing, bookkeeping, accounting services Haryana, remote accounting services">
+          content="M&K Accounts, M K Accounts, accounting services Hisar, accounting services Haryana, GST filing Hisar, GST return filing, income tax consultant Hisar, TDS services, bookkeeping services, part time accounting, remote accounting">
 
-    <meta name="author" content="M|&|K Accounts">
+    <meta name="author"
+          content="M|&|K Accounts">
 
-    <meta name="theme-color" content="#080808">
+    <meta name="theme-color"
+          content="#080808">
 
-    <title>M|&|K Accounts | GST, Income Tax, TDS & Accounting Services</title>
+    <meta property="og:title"
+          content="M|&|K Accounts | Accounting & Tax Services">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:description"
+          content="Professional GST, Income Tax, TDS and accounting services. Currently serving Haryana and looking forward to working with clients PAN India.">
+
+    <meta property="og:type"
+          content="website">
+
+    <title>
+        M|&|K Accounts | GST, Income Tax, TDS & Accounting Services
+    </title>
+
+
+    <!-- =========================================================
+         GOOGLE FONTS
+    ========================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
           rel="stylesheet">
 
-    <!-- Font Awesome -->
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Favicon -->
-    <link rel="icon"
-          href="data:image/svg+xml,
-          <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
-          <circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22black%22/>
-          <text x=%2250%22 y=%2260%22 text-anchor=%22middle%22
-          font-size=%2235%22 fill=%22white%22>MK</text>
-          </svg>">
 
-    <!-- Local Business Structured Data -->
+    <!-- =========================================================
+         STRUCTURED DATA
+    ========================================================== -->
+
     <script type="application/ld+json">
+
     {
         "@context": "https://schema.org",
         "@type": "AccountingService",
+
         "name": "M|&|K Accounts",
+
         "description": "Professional GST, Income Tax, TDS, bookkeeping and accounting services.",
+
+        "email": [
+            "Info@mkaccounts.in",
+            "ta.solution.hisar@gmail.com"
+        ],
+
         "telephone": [
             "+91-9817571705",
             "+91-9992075501"
         ],
-        "email": "ta.solution.hisar@gmail.com",
-        "url": "",
-        "areaServed": "India",
+
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Street No. 5, Chotu Ram Colony",
+            "addressLocality": "Hisar",
+            "addressRegion": "Haryana",
+            "postalCode": "125001",
+            "addressCountry": "IN"
+        },
+
+        "areaServed": [
+            {
+                "@type": "AdministrativeArea",
+                "name": "Haryana"
+            },
+            {
+                "@type": "Country",
+                "name": "India"
+            }
+        ],
+
         "sameAs": [
             "https://maps.app.goo.gl/D4xPndjc2F5G5AT7A"
         ]
+
     }
+
     </script>
 
 
+    <!-- =========================================================
+         FAVICON
+    ========================================================== -->
+
+    <link rel="icon"
+          href="data:image/svg+xml,
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+          <circle cx='50' cy='50' r='48' fill='black'/>
+          <text x='50' y='62'
+          text-anchor='middle'
+          font-family='Georgia'
+          font-size='30'
+          fill='white'>MK</text>
+          </svg>">
+
+
+    <!-- =========================================================
+         CSS
+    ========================================================== -->
+
     <style>
 
-        /* =========================================================
-           GLOBAL VARIABLES
-        ========================================================= */
-
         :root {
+
             --black: #080808;
             --black-soft: #111111;
             --black-light: #181818;
@@ -86,12 +171,13 @@
             --sans: "DM Sans", Arial, sans-serif;
 
             --container: 1180px;
+
         }
 
 
         /* =========================================================
            RESET
-        ========================================================= */
+        ========================================================== */
 
         * {
             margin: 0;
@@ -99,182 +185,276 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
+
             font-family: var(--sans);
+
             color: var(--black);
+
             background: var(--white);
+
             line-height: 1.6;
+
             overflow-x: hidden;
+
         }
+
 
         a {
+
             text-decoration: none;
+
             color: inherit;
+
         }
+
 
         button {
+
             font-family: inherit;
+
         }
+
 
         img {
+
             max-width: 100%;
+
             display: block;
+
         }
+
 
         .container {
-            width: min(100% - 40px, var(--container));
+
+            width: min(
+                calc(100% - 40px),
+                var(--container)
+            );
+
             margin: auto;
+
         }
 
 
         /* =========================================================
-           UTILITY
-        ========================================================= */
-
-        .serif {
-            font-family: var(--serif);
-        }
-
-        .uppercase {
-            text-transform: uppercase;
-        }
-
-        .gold {
-            color: var(--accent);
-        }
-
-
-        /* =========================================================
-           NAVIGATION
-        ========================================================= */
+           HEADER
+        ========================================================== */
 
         header {
+
             position: fixed;
+
             top: 0;
+
             left: 0;
+
             width: 100%;
+
             z-index: 9999;
 
-            background: rgba(8, 8, 8, 0.92);
+            background: rgba(8,8,8,0.93);
+
             backdrop-filter: blur(16px);
 
-            border-bottom: 1px solid rgba(255,255,255,0.08);
+            border-bottom: 1px solid rgba(
+                255,
+                255,
+                255,
+                0.08
+            );
 
-            transition: 0.3s ease;
+            transition: .3s ease;
+
         }
+
 
         header.scrolled {
-            background: rgba(8, 8, 8, 0.98);
+
+            background: rgba(
+                8,
+                8,
+                8,
+                0.98
+            );
+
         }
 
+
         .navbar {
+
             height: 72px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
+
         }
 
+
+        /* BRAND */
+
         .brand {
+
             display: flex;
+
             align-items: center;
+
             gap: 12px;
 
             color: white;
+
         }
 
+
         .brand-logo {
-            width: 38px;
-            height: 38px;
+
+            width: 39px;
+
+            height: 39px;
 
             border: 2px solid white;
+
             border-radius: 50%;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             font-family: var(--serif);
-            font-size: 14px;
+
+            font-size: 12px;
+
             font-weight: 700;
 
-            position: relative;
         }
+
 
         .brand-text {
+
             display: flex;
+
             flex-direction: column;
+
             line-height: 1;
+
         }
+
 
         .brand-name {
+
             font-size: 15px;
+
             font-weight: 700;
+
             letter-spacing: 1px;
+
         }
 
+
         .brand-sub {
-            margin-top: 4px;
+
+            margin-top: 5px;
 
             color: #777;
+
             font-size: 8px;
+
             font-weight: 600;
 
             letter-spacing: 1.5px;
+
         }
+
+
+        /* NAVIGATION */
 
         .nav-links {
+
             display: flex;
+
             align-items: center;
-            gap: 35px;
+
+            gap: 34px;
 
             color: #bdbdbd;
+
             font-size: 14px;
+
         }
+
 
         .nav-links a {
-            transition: 0.25s ease;
+
+            transition: .25s ease;
+
         }
+
 
         .nav-links a:hover {
+
             color: white;
+
         }
+
 
         .nav-cta {
+
             border: 1px solid #777;
+
             padding: 10px 22px;
+
             color: white !important;
 
-            transition: 0.3s ease;
+            transition: .3s ease;
+
         }
+
 
         .nav-cta:hover {
+
             background: white;
+
             color: black !important;
+
             border-color: white;
+
         }
 
+
         .menu-btn {
+
             display: none;
 
             border: 0;
+
             background: transparent;
+
             color: white;
 
             font-size: 22px;
+
             cursor: pointer;
+
         }
 
 
         /* =========================================================
            HERO
-        ========================================================= */
+        ========================================================== */
 
         .hero {
+
             min-height: 100vh;
 
             background:
@@ -291,309 +471,479 @@
             padding-top: 72px;
 
             display: flex;
+
             align-items: center;
+
         }
 
+
         .hero-grid {
+
             display: grid;
-            grid-template-columns: 1.05fr 0.95fr;
+
+            grid-template-columns:
+                1.05fr
+                .95fr;
+
             gap: 70px;
 
             align-items: center;
 
-            padding: 80px 0 90px;
+            padding:
+                80px
+                0
+                90px;
+
         }
 
+
         .rating-line {
+
             display: flex;
+
             align-items: center;
-            gap: 12px;
+
+            gap: 11px;
 
             color: #aaa;
+
             font-size: 12px;
 
             margin-bottom: 28px;
+
         }
+
 
         .stars {
+
             color: white;
+
             letter-spacing: 2px;
+
         }
 
+
         .hero h1 {
+
             font-family: var(--serif);
 
-            font-size: clamp(52px, 6vw, 86px);
+            font-size:
+                clamp(
+                    52px,
+                    6vw,
+                    86px
+                );
 
-            line-height: 0.98;
+            line-height: .98;
 
             font-weight: 600;
 
             letter-spacing: -2px;
 
-            max-width: 720px;
         }
+
 
         .hero h1 span {
+
             color: #777;
+
         }
 
+
         .hero-description {
+
             color: #a7a7a7;
 
             font-size: 17px;
+
             line-height: 1.8;
 
-            max-width: 570px;
+            max-width: 590px;
 
             margin-top: 30px;
+
         }
 
+
         .hero-buttons {
+
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 14px;
 
             margin-top: 35px;
+
         }
 
+
         .btn {
+
             display: inline-flex;
+
             align-items: center;
+
             justify-content: center;
+
             gap: 10px;
 
             min-height: 50px;
 
-            padding: 0 25px;
+            padding:
+                0
+                25px;
 
             border: 1px solid #555;
 
             font-size: 13px;
+
             font-weight: 600;
 
-            transition: 0.3s ease;
+            transition: .3s ease;
 
             cursor: pointer;
+
         }
+
 
         .btn-primary {
+
             background: white;
+
             color: black;
+
             border-color: white;
+
         }
+
 
         .btn-primary:hover {
+
             background: transparent;
+
             color: white;
+
         }
+
 
         .btn-outline {
+
             color: white;
+
         }
+
 
         .btn-outline:hover {
+
             background: white;
+
             color: black;
+
         }
 
+
         .hero-contact {
+
             display: flex;
+
             gap: 35px;
 
             margin-top: 50px;
+
         }
+
 
         .hero-contact-item {
-            border-left: 1px solid #444;
+
+            border-left:
+                1px solid #444;
+
             padding-left: 15px;
+
         }
 
+
         .hero-contact-label {
+
             color: #777;
 
             font-size: 9px;
+
             letter-spacing: 1.5px;
 
             margin-bottom: 5px;
+
         }
 
+
         .hero-contact-number {
+
             color: white;
 
             font-size: 13px;
+
         }
 
 
         /* =========================================================
-           HERO BRAND CARD
-        ========================================================= */
+           HERO BUSINESS CARD
+        ========================================================== */
 
         .hero-visual {
+
             position: relative;
 
             display: flex;
+
             justify-content: center;
+
             align-items: center;
 
             min-height: 520px;
+
         }
 
+
         .floating-logo {
+
             position: absolute;
 
             top: 0;
+
             right: 15%;
 
             width: 185px;
+
             height: 185px;
 
             background: white;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
-            box-shadow: 0 25px 70px rgba(0,0,0,0.35);
+            box-shadow:
+                0 25px 70px
+                rgba(0,0,0,.35);
 
-            animation: floatLogo 5s ease-in-out infinite;
+            animation:
+                floatLogo 5s
+                ease-in-out infinite;
+
         }
 
+
         .floating-logo-inner {
+
             width: 125px;
+
             height: 125px;
 
             background: black;
+
             color: white;
 
             border-radius: 50%;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             font-family: var(--serif);
+
             font-size: 38px;
+
             font-weight: 600;
+
         }
 
+
         @keyframes floatLogo {
+
             0%,100% {
-                transform: translateY(0);
+
+                transform:
+                    translateY(0);
+
             }
 
             50% {
-                transform: translateY(-12px);
+
+                transform:
+                    translateY(-12px);
+
             }
+
         }
 
+
         .business-card {
+
             width: 500px;
+
             max-width: 100%;
 
-            background: #f5f5f2;
+            background:
+                #f5f5f2;
+
             color: black;
 
-            padding: 22px 28px 18px;
+            padding:
+                22px
+                28px
+                18px;
 
             margin-top: 125px;
 
             box-shadow:
-                0 30px 80px rgba(0,0,0,0.4);
+                0 30px 80px
+                rgba(0,0,0,.4);
 
-            position: relative;
         }
+
 
         .card-top {
+
             display: flex;
-            justify-content: space-between;
+
+            justify-content:
+                space-between;
 
             font-weight: 700;
-            font-family: Georgia, serif;
+
+            font-family:
+                Georgia,
+                serif;
 
             font-size: 17px;
+
         }
 
+
         .card-phone {
-            font-family: var(--sans);
+
+            display: block;
+
+            font-family:
+                var(--sans);
 
             font-size: 13px;
 
-            display: block;
             margin-top: 3px;
+
         }
 
+
         .card-logo {
+
             width: 70px;
+
             height: 70px;
 
             background: black;
+
             color: white;
 
             border-radius: 50%;
 
-            margin: 5px auto 12px;
+            margin:
+                5px auto
+                12px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
-            font-family: var(--serif);
+            font-family:
+                var(--serif);
+
             font-size: 23px;
-            font-weight: 600;
+
         }
 
+
         .card-title {
-            font-family: var(--sans);
 
             text-align: center;
 
-            font-size: 28px;
+            font-size: 27px;
+
             font-weight: 700;
 
             letter-spacing: 2px;
 
             margin-bottom: 16px;
+
         }
 
+
         .card-services {
+
             text-align: center;
 
             font-size: 14px;
 
             margin-bottom: 17px;
+
         }
+
 
         .card-services strong {
+
             display: block;
+
             margin-bottom: 4px;
+
         }
 
+
         .card-footer {
-            border-top: 1px solid #c5c5c5;
 
-            margin: 0 -28px -18px;
+            border-top:
+                1px solid #c5c5c5;
 
-            padding: 12px 25px;
+            margin:
+                0 -28px
+                -18px;
+
+            padding:
+                12px 25px;
 
             display: flex;
-            justify-content: space-between;
 
-            font-size: 11px;
+            justify-content:
+                space-between;
 
-            background: #dddcd7;
+            gap: 15px;
+
+            font-size: 10px;
+
+            background:
+                #dddcd7;
+
         }
 
 
         /* =========================================================
-           SECTION
-        ========================================================= */
+           SECTIONS
+        ========================================================== */
 
         section {
+
             padding: 110px 0;
+
         }
 
+
         .section-kicker {
+
             color: #8b7655;
 
             font-size: 10px;
@@ -602,24 +952,37 @@
 
             font-weight: 700;
 
-            text-transform: uppercase;
+            text-transform:
+                uppercase;
 
             margin-bottom: 18px;
+
         }
 
-        .section-title {
-            font-family: var(--serif);
 
-            font-size: clamp(38px, 4.5vw, 60px);
+        .section-title {
+
+            font-family:
+                var(--serif);
+
+            font-size:
+                clamp(
+                    38px,
+                    4.5vw,
+                    60px
+                );
 
             line-height: 1.08;
 
             font-weight: 600;
 
             letter-spacing: -1.5px;
+
         }
 
+
         .section-intro {
+
             max-width: 620px;
 
             color: #6e6e6e;
@@ -629,188 +992,344 @@
             font-size: 16px;
 
             line-height: 1.8;
+
         }
 
 
         /* =========================================================
            SERVICES
-        ========================================================= */
+        ========================================================== */
 
         .services-section {
+
             background: white;
+
         }
+
 
         .services-header {
+
             display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                flex-end;
 
             margin-bottom: 65px;
+
         }
+
 
         .services-grid {
+
             display: grid;
 
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns:
+                repeat(3,1fr);
 
-            border-top: 1px solid var(--border);
-            border-left: 1px solid var(--border);
+            border-top:
+                1px solid var(--border);
+
+            border-left:
+                1px solid var(--border);
+
         }
 
+
         .service-card {
-            padding: 38px 32px 42px;
 
-            min-height: 270px;
+            padding:
+                38px
+                32px
+                42px;
 
-            border-right: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
+            min-height: 280px;
 
-            transition: 0.35s ease;
+            border-right:
+                1px solid var(--border);
+
+            border-bottom:
+                1px solid var(--border);
+
+            transition: .35s ease;
 
             position: relative;
 
             background: white;
+
         }
+
 
         .service-card:hover {
+
             background: #f5f5f3;
-            transform: translateY(-4px);
+
+            transform:
+                translateY(-4px);
+
         }
 
+
         .service-icon {
+
             width: 42px;
+
             height: 42px;
 
             background: #f0f0ee;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             margin-bottom: 25px;
 
-            font-size: 16px;
         }
 
+
         .service-number {
+
             position: absolute;
 
             right: 25px;
+
             top: 25px;
 
             font-size: 11px;
+
             color: #bbb;
+
         }
 
+
         .service-card h3 {
-            font-family: var(--serif);
+
+            font-family:
+                var(--serif);
 
             font-size: 21px;
 
             margin-bottom: 13px;
+
         }
 
+
         .service-card p {
+
             color: #737373;
 
             font-size: 14px;
 
             line-height: 1.75;
+
         }
 
+
         .service-link {
+
             display: inline-flex;
 
             margin-top: 20px;
 
             font-size: 12px;
+
             font-weight: 700;
 
             gap: 8px;
 
             align-items: center;
+
         }
 
 
         /* =========================================================
-           ABOUT / WHY US
-        ========================================================= */
+           STATS
+        ========================================================== */
 
-        .about-section {
+        .stats-section {
+
             background: #f5f5f3;
+
+            padding: 75px 0;
+
         }
 
-        .about-grid {
+
+        .stats-grid {
+
             display: grid;
 
-            grid-template-columns: 0.9fr 1.1fr;
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 1px;
+
+            background:
+                #d8d8d5;
+
+        }
+
+
+        .stat {
+
+            background:
+                #f5f5f3;
+
+            padding:
+                25px 30px;
+
+            text-align: center;
+
+        }
+
+
+        .stat-number {
+
+            font-family:
+                var(--serif);
+
+            font-size: 40px;
+
+            font-weight: 600;
+
+        }
+
+
+        .stat-label {
+
+            color: #777;
+
+            font-size: 10px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        /* =========================================================
+           ABOUT
+        ========================================================== */
+
+        .about-section {
+
+            background: #f5f5f3;
+
+        }
+
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                .9fr 1.1fr;
 
             gap: 100px;
 
             align-items: center;
+
         }
 
+
         .about-box {
+
             background: black;
 
             color: white;
 
-            padding: 65px 55px;
+            padding:
+                65px 55px;
 
-            min-height: 430px;
+            min-height: 450px;
 
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+
+            flex-direction:
+                column;
+
+            justify-content:
+                space-between;
 
             position: relative;
+
             overflow: hidden;
+
         }
 
+
         .about-box::before {
+
             content: "MK";
 
             position: absolute;
 
             right: -20px;
+
             bottom: -80px;
 
-            font-family: var(--serif);
+            font-family:
+                var(--serif);
 
             font-size: 240px;
 
-            color: rgba(255,255,255,0.035);
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .035
+                );
 
             font-weight: 700;
+
         }
 
+
         .about-box small {
+
             color: #999;
 
             letter-spacing: 2px;
 
             font-size: 10px;
+
         }
 
+
         .about-box h3 {
-            font-family: var(--serif);
+
+            font-family:
+                var(--serif);
 
             font-size: 45px;
 
             line-height: 1.1;
 
             position: relative;
+
         }
 
+
         .about-box p {
+
             color: #aaa;
 
             font-size: 14px;
 
             position: relative;
+
         }
 
+
         .about-content p {
+
             color: #666;
 
             font-size: 16px;
@@ -818,335 +1337,448 @@
             line-height: 1.9;
 
             margin-top: 25px;
+
         }
 
+
         .benefits {
+
             margin-top: 35px;
 
             display: grid;
 
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns:
+                1fr 1fr;
 
-            gap: 18px 30px;
+            gap: 22px 30px;
+
         }
 
+
         .benefit {
+
             display: flex;
 
             gap: 13px;
 
-            align-items: flex-start;
+            align-items:
+                flex-start;
+
         }
 
+
         .benefit-icon {
+
             width: 30px;
+
             height: 30px;
 
             background: black;
+
             color: white;
 
             border-radius: 50%;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             font-size: 11px;
 
             flex-shrink: 0;
+
         }
 
+
         .benefit strong {
+
             display: block;
 
             font-size: 14px;
 
             margin-bottom: 3px;
+
         }
 
+
         .benefit span {
+
             display: block;
 
             color: #777;
 
             font-size: 12px;
+
         }
 
 
         /* =========================================================
            PROCESS
-        ========================================================= */
+        ========================================================== */
 
         .process-section {
+
             background: black;
+
             color: white;
+
         }
 
-        .process-section .section-kicker {
+
+        .process-section
+        .section-kicker {
+
             color: #a68b60;
+
         }
 
-        .process-section .section-intro {
+
+        .process-section
+        .section-intro {
+
             color: #888;
+
         }
+
 
         .process-grid {
+
             margin-top: 65px;
 
             display: grid;
 
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns:
+                repeat(4,1fr);
 
-            border-top: 1px solid #292929;
-            border-left: 1px solid #292929;
+            border-top:
+                1px solid #292929;
+
+            border-left:
+                1px solid #292929;
+
         }
+
 
         .process-card {
-            padding: 35px 30px 45px;
 
-            border-right: 1px solid #292929;
-            border-bottom: 1px solid #292929;
+            padding:
+                35px
+                30px
+                45px;
+
+            border-right:
+                1px solid #292929;
+
+            border-bottom:
+                1px solid #292929;
+
         }
 
+
         .process-number {
-            font-family: var(--serif);
+
+            font-family:
+                var(--serif);
 
             font-size: 38px;
 
             color: #555;
 
             margin-bottom: 35px;
+
         }
 
+
         .process-card h3 {
-            font-family: var(--serif);
+
+            font-family:
+                var(--serif);
 
             font-size: 22px;
 
             margin-bottom: 12px;
+
         }
 
+
         .process-card p {
+
             color: #888;
 
             font-size: 13px;
 
             line-height: 1.75;
-        }
 
-
-        /* =========================================================
-           STATS
-        ========================================================= */
-
-        .stats-section {
-            background: #f5f5f3;
-
-            padding: 75px 0;
-        }
-
-        .stats-grid {
-            display: grid;
-
-            grid-template-columns: repeat(4, 1fr);
-
-            gap: 1px;
-
-            background: #d8d8d5;
-        }
-
-        .stat {
-            background: #f5f5f3;
-
-            padding: 25px 30px;
-
-            text-align: center;
-        }
-
-        .stat-number {
-            font-family: var(--serif);
-
-            font-size: 42px;
-
-            font-weight: 600;
-        }
-
-        .stat-label {
-            color: #777;
-
-            font-size: 11px;
-
-            text-transform: uppercase;
-
-            letter-spacing: 1px;
         }
 
 
         /* =========================================================
            REVIEWS
-        ========================================================= */
+        ========================================================== */
 
         .reviews-section {
+
             background: #f5f5f3;
+
         }
+
 
         .reviews-header {
-            display: flex;
-            justify-content: space-between;
 
-            align-items: flex-end;
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                flex-end;
 
             margin-bottom: 55px;
+
         }
 
+
         .google-rating {
-            border: 1px solid #d5d5d5;
+
+            border:
+                1px solid #d5d5d5;
 
             background: white;
 
-            padding: 18px 25px;
+            padding:
+                18px 25px;
 
             display: flex;
+
             align-items: center;
 
             gap: 20px;
+
+            transition: .3s ease;
+
         }
 
+
+        .google-rating:hover {
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 10px 30px
+                rgba(0,0,0,.06);
+
+        }
+
+
         .google-score {
-            font-family: var(--serif);
+
+            font-family:
+                var(--serif);
 
             font-size: 32px;
 
             font-weight: 600;
+
         }
 
+
         .google-stars {
+
             font-size: 12px;
 
             letter-spacing: 2px;
 
-            margin-bottom: 2px;
         }
 
+
         .google-text {
+
             color: #777;
 
             font-size: 10px;
+
         }
+
 
         .reviews-grid {
+
             display: grid;
 
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns:
+                1fr 1fr;
 
             gap: 20px;
+
         }
 
+
         .review-card {
+
             background: white;
 
-            border: 1px solid #ddd;
+            border:
+                1px solid #ddd;
 
             padding: 28px;
 
-            transition: 0.3s ease;
+            transition: .3s ease;
+
         }
+
 
         .review-card:hover {
-            transform: translateY(-3px);
 
-            box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 15px 40px
+                rgba(0,0,0,.05);
+
         }
+
 
         .review-top {
+
             display: flex;
 
-            justify-content: space-between;
+            justify-content:
+                space-between;
 
-            align-items: flex-start;
+            align-items:
+                flex-start;
 
             margin-bottom: 22px;
+
         }
 
+
         .review-person {
+
             display: flex;
 
             align-items: center;
 
             gap: 13px;
+
         }
 
+
         .review-avatar {
+
             width: 40px;
+
             height: 40px;
 
             border-radius: 50%;
 
             background: black;
+
             color: white;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             font-size: 12px;
+
             font-weight: 600;
+
         }
+
 
         .review-name {
+
             font-size: 13px;
+
             font-weight: 700;
+
         }
+
 
         .review-date {
+
             color: #999;
+
             font-size: 10px;
+
         }
+
 
         .review-stars {
+
             font-size: 11px;
+
             letter-spacing: 1px;
+
         }
 
+
         .review-text {
+
             color: #666;
 
             font-size: 13px;
 
             line-height: 1.8;
+
         }
 
 
         /* =========================================================
            FAQ
-        ========================================================= */
+        ========================================================== */
 
         .faq-section {
+
             background: white;
+
         }
+
 
         .faq-wrapper {
+
             max-width: 850px;
 
-            margin: 55px auto 0;
+            margin:
+                55px auto 0;
+
         }
+
 
         .faq-item {
-            border-top: 1px solid #ddd;
+
+            border-top:
+                1px solid #ddd;
+
         }
+
 
         .faq-item:last-child {
-            border-bottom: 1px solid #ddd;
+
+            border-bottom:
+                1px solid #ddd;
+
         }
 
+
         .faq-question {
+
             width: 100%;
 
             border: none;
+
             background: transparent;
 
             display: flex;
-            justify-content: space-between;
+
+            justify-content:
+                space-between;
 
             align-items: center;
 
@@ -1154,30 +1786,42 @@
 
             padding: 23px 0;
 
-            font-family: var(--serif);
+            font-family:
+                var(--serif);
 
             font-size: 19px;
 
             cursor: pointer;
+
         }
 
+
         .faq-question i {
-            font-family: var(--sans);
+
+            font-family:
+                var(--sans);
 
             font-size: 12px;
 
-            transition: 0.3s ease;
+            transition: .3s ease;
+
         }
 
+
         .faq-answer {
+
             max-height: 0;
 
             overflow: hidden;
 
-            transition: max-height 0.35s ease;
+            transition:
+                max-height .35s ease;
+
         }
 
+
         .faq-answer p {
+
             color: #777;
 
             font-size: 14px;
@@ -1187,95 +1831,144 @@
             padding-bottom: 25px;
 
             max-width: 760px;
+
         }
 
-        .faq-item.active .faq-question i {
-            transform: rotate(45deg);
+
+        .faq-item.active
+        .faq-question i {
+
+            transform:
+                rotate(45deg);
+
         }
 
 
         /* =========================================================
            CONTACT
-        ========================================================= */
+        ========================================================== */
 
         .contact-section {
+
             background: black;
+
             color: white;
+
         }
+
 
         .contact-grid {
+
             display: grid;
 
-            grid-template-columns: 1fr 0.9fr;
+            grid-template-columns:
+                1fr .9fr;
 
             gap: 100px;
+
         }
 
-        .contact-section .section-kicker {
+
+        .contact-section
+        .section-kicker {
+
             color: #a68b60;
+
         }
 
-        .contact-section .section-intro {
+
+        .contact-section
+        .section-intro {
+
             color: #8d8d8d;
+
         }
+
 
         .contact-details {
+
             margin-top: 45px;
+
         }
 
+
         .contact-item {
+
             display: flex;
 
             gap: 17px;
 
             padding: 18px 0;
 
-            border-bottom: 1px solid #272727;
+            border-bottom:
+                1px solid #272727;
+
         }
 
+
         .contact-item i {
+
             width: 20px;
 
             color: #aaa;
 
             margin-top: 3px;
+
         }
 
+
         .contact-item-label {
+
             color: #666;
 
             font-size: 9px;
 
             letter-spacing: 1.5px;
 
-            text-transform: uppercase;
+            text-transform:
+                uppercase;
+
         }
 
+
         .contact-item-value {
+
             margin-top: 3px;
 
             font-size: 14px;
+
         }
 
+
         .contact-card {
-            background: #f4f4f1;
+
+            background:
+                #f4f4f1;
 
             color: black;
 
             padding: 45px;
 
-            align-self: start;
+            align-self:
+                flex-start;
+
         }
 
+
         .contact-card h3 {
-            font-family: var(--serif);
+
+            font-family:
+                var(--serif);
 
             font-size: 31px;
 
             margin-bottom: 10px;
+
         }
 
+
         .contact-card p {
+
             color: #707070;
 
             font-size: 13px;
@@ -1283,91 +1976,137 @@
             line-height: 1.7;
 
             margin-bottom: 25px;
+
         }
 
+
         .contact-buttons {
+
             display: grid;
 
             gap: 10px;
+
         }
+
 
         .contact-buttons .btn {
+
             width: 100%;
+
         }
 
-        .contact-buttons .btn-primary {
+
+        .contact-buttons
+        .btn-primary {
+
             background: black;
+
             color: white;
+
             border-color: black;
+
         }
 
-        .contact-buttons .btn-primary:hover {
+
+        .contact-buttons
+        .btn-primary:hover {
+
             background: transparent;
+
             color: black;
+
         }
 
-        .contact-buttons .btn-outline {
+
+        .contact-buttons
+        .btn-outline {
+
             color: black;
+
             border-color: #aaa;
+
         }
 
-        .contact-buttons .btn-outline:hover {
+
+        .contact-buttons
+        .btn-outline:hover {
+
             background: black;
+
             color: white;
+
         }
 
 
         /* =========================================================
            FOOTER
-        ========================================================= */
+        ========================================================== */
 
         footer {
+
             background: #050505;
 
             color: white;
 
-            border-top: 1px solid #222;
+            border-top:
+                1px solid #222;
 
-            padding: 50px 0 25px;
+            padding:
+                50px 0 25px;
+
         }
 
+
         .footer-top {
+
             display: grid;
 
-            grid-template-columns: 1.3fr 1fr 1fr;
+            grid-template-columns:
+                1.3fr 1fr 1fr;
 
             gap: 50px;
 
             padding-bottom: 45px;
 
-            border-bottom: 1px solid #222;
+            border-bottom:
+                1px solid #222;
+
         }
 
+
         .footer-brand p {
+
             color: #777;
 
-            max-width: 350px;
+            max-width: 380px;
 
             margin-top: 15px;
 
             font-size: 12px;
 
             line-height: 1.8;
+
         }
 
+
         .footer-title {
+
             font-size: 11px;
 
             letter-spacing: 1.5px;
 
-            text-transform: uppercase;
+            text-transform:
+                uppercase;
 
             color: #888;
 
             margin-bottom: 17px;
+
         }
 
+
         .footer-links {
+
             display: grid;
 
             gap: 9px;
@@ -1375,16 +2114,23 @@
             color: #aaa;
 
             font-size: 12px;
+
         }
+
 
         .footer-links a:hover {
+
             color: white;
+
         }
 
+
         .footer-bottom {
+
             display: flex;
 
-            justify-content: space-between;
+            justify-content:
+                space-between;
 
             gap: 20px;
 
@@ -1393,20 +2139,24 @@
             color: #555;
 
             font-size: 10px;
+
         }
 
 
         /* =========================================================
-           FLOATING WHATSAPP
-        ========================================================= */
+           WHATSAPP
+        ========================================================== */
 
         .whatsapp-float {
+
             position: fixed;
 
             right: 25px;
+
             bottom: 25px;
 
             width: 55px;
+
             height: 55px;
 
             background: #25d366;
@@ -1416,92 +2166,125 @@
             border-radius: 50%;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             font-size: 25px;
 
             z-index: 999;
 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow:
+                0 10px 30px
+                rgba(0,0,0,.2);
 
-            transition: 0.3s ease;
+            transition: .3s ease;
+
         }
 
+
         .whatsapp-float:hover {
-            transform: translateY(-4px) scale(1.04);
+
+            transform:
+                translateY(-4px)
+                scale(1.04);
+
         }
 
 
         /* =========================================================
            BACK TO TOP
-        ========================================================= */
+        ========================================================== */
 
         .back-top {
+
             position: fixed;
 
             right: 25px;
+
             bottom: 95px;
 
             width: 42px;
+
             height: 42px;
 
             background: black;
+
             color: white;
 
-            border: 1px solid #333;
+            border:
+                1px solid #333;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             cursor: pointer;
 
             opacity: 0;
+
             visibility: hidden;
 
-            transition: 0.3s ease;
+            transition: .3s ease;
 
             z-index: 999;
+
         }
 
+
         .back-top.show {
+
             opacity: 1;
+
             visibility: visible;
+
         }
 
 
         /* =========================================================
-           SCROLL REVEAL
-        ========================================================= */
+           SCROLL ANIMATION
+        ========================================================== */
 
         .reveal {
+
             opacity: 0;
 
-            transform: translateY(30px);
+            transform:
+                translateY(30px);
 
             transition:
-                opacity 0.8s ease,
-                transform 0.8s ease;
+                opacity .8s ease,
+                transform .8s ease;
+
         }
 
+
         .reveal.visible {
+
             opacity: 1;
 
-            transform: translateY(0);
+            transform:
+                translateY(0);
+
         }
 
 
         /* =========================================================
            MOBILE
-        ========================================================= */
+        ========================================================== */
 
-        @media (max-width: 900px) {
+        @media(max-width:900px) {
+
 
             .nav-links {
+
                 position: absolute;
 
                 top: 72px;
+
                 left: 0;
 
                 width: 100%;
@@ -1512,239 +2295,407 @@
 
                 display: none;
 
-                flex-direction: column;
+                flex-direction:
+                    column;
 
-                align-items: stretch;
+                align-items:
+                    stretch;
 
                 gap: 0;
 
-                border-bottom: 1px solid #222;
+                border-bottom:
+                    1px solid #222;
+
             }
+
 
             .nav-links.active {
+
                 display: flex;
+
             }
+
 
             .nav-links a {
+
                 padding: 14px 0;
 
-                border-bottom: 1px solid #222;
+                border-bottom:
+                    1px solid #222;
+
             }
 
+
             .nav-cta {
+
                 text-align: center;
 
                 margin-top: 10px;
+
             }
+
 
             .menu-btn {
+
                 display: block;
+
             }
+
 
             .hero-grid {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
 
                 gap: 60px;
+
             }
+
 
             .hero-visual {
+
                 min-height: 430px;
+
             }
+
 
             .floating-logo {
+
                 right: 10%;
+
             }
+
 
             .services-grid {
-                grid-template-columns: 1fr 1fr;
+
+                grid-template-columns:
+                    1fr 1fr;
+
             }
+
 
             .about-grid {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
 
                 gap: 50px;
+
             }
+
 
             .process-grid {
-                grid-template-columns: 1fr 1fr;
+
+                grid-template-columns:
+                    1fr 1fr;
+
             }
+
 
             .contact-grid {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
 
                 gap: 50px;
+
             }
 
+
             .footer-top {
-                grid-template-columns: 1fr 1fr;
+
+                grid-template-columns:
+                    1fr 1fr;
+
             }
+
         }
 
 
-        @media (max-width: 650px) {
+        @media(max-width:650px) {
+
 
             .container {
-                width: min(100% - 30px, var(--container));
+
+                width:
+                    min(
+                        calc(100% - 30px),
+                        var(--container)
+                    );
+
             }
+
 
             section {
+
                 padding: 80px 0;
+
             }
+
 
             .navbar {
+
                 height: 65px;
+
             }
+
 
             .nav-links {
+
                 top: 65px;
+
             }
+
 
             .brand-name {
+
                 font-size: 13px;
+
             }
+
 
             .brand-logo {
+
                 width: 34px;
+
                 height: 34px;
+
             }
+
 
             .hero {
+
                 padding-top: 65px;
+
             }
+
 
             .hero-grid {
+
                 padding: 65px 0;
+
             }
 
+
             .hero h1 {
+
                 font-size: 51px;
 
                 letter-spacing: -1px;
+
             }
+
 
             .hero-description {
+
                 font-size: 15px;
+
             }
 
+
             .hero-contact {
+
                 gap: 20px;
 
                 flex-wrap: wrap;
+
             }
 
+
             .floating-logo {
+
                 width: 130px;
+
                 height: 130px;
 
                 right: 2%;
+
             }
 
+
             .floating-logo-inner {
+
                 width: 90px;
+
                 height: 90px;
 
                 font-size: 27px;
+
             }
+
 
             .business-card {
+
                 margin-top: 100px;
 
-                padding: 17px 18px 14px;
+                padding:
+                    17px
+                    18px
+                    14px;
+
             }
+
 
             .card-title {
+
                 font-size: 20px;
+
             }
+
 
             .card-top {
+
                 font-size: 13px;
+
             }
+
 
             .card-phone {
+
                 font-size: 10px;
+
             }
+
 
             .card-footer {
+
                 margin-left: -18px;
+
                 margin-right: -18px;
+
                 margin-bottom: -14px;
 
-                padding: 10px 14px;
+                padding:
+                    10px
+                    14px;
 
                 font-size: 8px;
+
             }
+
 
             .services-header,
             .reviews-header {
+
                 display: block;
+
             }
+
 
             .services-grid {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
+
             }
+
 
             .service-card {
+
                 min-height: auto;
+
             }
+
 
             .benefits {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
+
             }
+
 
             .process-grid {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
+
             }
+
 
             .stats-grid {
-                grid-template-columns: 1fr 1fr;
+
+                grid-template-columns:
+                    1fr 1fr;
+
             }
+
 
             .reviews-grid {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
+
             }
 
+
             .google-rating {
+
                 margin-top: 25px;
 
                 width: fit-content;
+
             }
+
 
             .contact-card {
-                padding: 30px 25px;
+
+                padding:
+                    30px 25px;
+
             }
+
 
             .footer-top {
-                grid-template-columns: 1fr;
+
+                grid-template-columns:
+                    1fr;
+
             }
+
 
             .footer-bottom {
-                flex-direction: column;
+
+                flex-direction:
+                    column;
+
             }
 
+
             .whatsapp-float {
+
                 width: 50px;
+
                 height: 50px;
 
                 right: 18px;
+
                 bottom: 18px;
+
             }
 
+
             .back-top {
+
                 right: 18px;
+
                 bottom: 80px;
+
             }
+
         }
 
     </style>
+
 </head>
 
 
 <body>
 
 
-<!-- ============================================================
+<!-- =========================================================
      HEADER
-============================================================ -->
+========================================================== -->
 
 <header id="header">
 
@@ -1752,7 +2703,9 @@
 
         <nav class="navbar">
 
-            <a href="#home" class="brand">
+
+            <a href="#home"
+               class="brand">
 
                 <div class="brand-logo">
                     M|K
@@ -1773,7 +2726,8 @@
             </a>
 
 
-            <div class="nav-links" id="navLinks">
+            <div class="nav-links"
+                 id="navLinks">
 
                 <a href="#services">
                     Services
@@ -1791,8 +2745,11 @@
                     FAQ
                 </a>
 
-                <a href="#contact" class="nav-cta">
+                <a href="#contact"
+                   class="nav-cta">
+
                     Get in Touch
+
                 </a>
 
             </div>
@@ -1814,22 +2771,23 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      HERO
-============================================================ -->
+========================================================== -->
 
 <main>
 
-<section class="hero" id="home">
+
+<section class="hero"
+         id="home">
 
     <div class="container">
 
         <div class="hero-grid">
 
 
-            <!-- LEFT -->
-
             <div class="hero-content reveal">
+
 
                 <div class="rating-line">
 
@@ -1853,22 +2811,32 @@
 
 
                 <h1>
+
                     Trusted
-                    <span>Accounting</span>
+
+                    <span>
+                        Accounting
+                    </span>
+
                     Services
+
                 </h1>
 
 
                 <p class="hero-description">
 
-                    GST Returns, Income Tax, TDS, bookkeeping,
-                    and professional accounting support —
-                    delivered remotely, nationwide.
+                    GST Returns, Income Tax, TDS,
+                    bookkeeping and professional
+                    accounting support — currently
+                    serving clients across Haryana,
+                    with a vision to work with clients
+                    PAN India.
 
                 </p>
 
 
                 <div class="hero-buttons">
+
 
                     <a href="#contact"
                        class="btn btn-primary">
@@ -1887,10 +2855,12 @@
 
                     </a>
 
+
                 </div>
 
 
                 <div class="hero-contact">
+
 
                     <div class="hero-contact-item">
 
@@ -1923,13 +2893,30 @@
 
                     </div>
 
+
+                    <div class="hero-contact-item">
+
+                        <div class="hero-contact-label">
+                            PRIMARY EMAIL
+                        </div>
+
+                        <a href="mailto:Info@mkaccounts.in"
+                           class="hero-contact-number">
+
+                            Info@mkaccounts.in
+
+                        </a>
+
+                    </div>
+
+
                 </div>
 
             </div>
 
 
 
-            <!-- RIGHT -->
+            <!-- HERO VISUAL -->
 
             <div class="hero-visual reveal">
 
@@ -1948,13 +2935,17 @@
 
                     <div class="card-top">
 
+
                         <div>
 
                             MANAV
 
                             <span class="card-phone">
+
                                 <i class="fa-solid fa-phone"></i>
+
                                 98175-71705
+
                             </span>
 
                         </div>
@@ -1965,11 +2956,15 @@
                             KRISH
 
                             <span class="card-phone">
+
                                 <i class="fa-solid fa-phone"></i>
+
                                 99920-75501
+
                             </span>
 
                         </div>
+
 
                     </div>
 
@@ -1999,12 +2994,18 @@
                     <div class="card-footer">
 
                         <span>
+
                             <i class="fa-regular fa-envelope"></i>
-                            ta.solution.hisar@gmail.com
+
+                            Info@mkaccounts.in
+
                         </span>
 
+
                         <span>
-                            Remote Operations | No Physical Office
+
+                            Remote Operations | Haryana
+
                         </span>
 
                     </div>
@@ -2022,9 +3023,9 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      SERVICES
-============================================================ -->
+========================================================== -->
 
 <section class="services-section"
          id="services">
@@ -2034,6 +3035,7 @@
 
         <div class="services-header reveal">
 
+
             <div>
 
                 <div class="section-kicker">
@@ -2041,8 +3043,11 @@
                 </div>
 
                 <h2 class="section-title">
+
                     Comprehensive<br>
+
                     Financial Services
+
                 </h2>
 
             </div>
@@ -2050,19 +3055,22 @@
 
             <p class="section-intro">
 
-                Practical accounting and compliance solutions
-                designed for individuals, professionals,
-                startups, small businesses and growing enterprises.
+                Practical accounting and compliance
+                solutions designed for individuals,
+                professionals, startups, small businesses
+                and growing enterprises.
 
             </p>
 
+
         </div>
+
 
 
         <div class="services-grid">
 
 
-            <!-- SERVICE 01 -->
+            <!-- GST -->
 
             <article class="service-card reveal">
 
@@ -2071,7 +3079,9 @@
                 </span>
 
                 <div class="service-icon">
+
                     <i class="fa-regular fa-file-lines"></i>
+
                 </div>
 
                 <h3>
@@ -2079,9 +3089,12 @@
                 </h3>
 
                 <p>
-                    GST registration, GSTR-1, GSTR-3B,
-                    annual return support, reconciliation,
-                    notices and routine GST compliance.
+
+                    GST registration, GSTR-1,
+                    GSTR-3B, annual return support,
+                    reconciliation, notices and
+                    routine GST compliance.
+
                 </p>
 
                 <a href="#contact"
@@ -2097,7 +3110,7 @@
 
 
 
-            <!-- SERVICE 02 -->
+            <!-- INCOME TAX -->
 
             <article class="service-card reveal">
 
@@ -2106,7 +3119,9 @@
                 </span>
 
                 <div class="service-icon">
+
                     <i class="fa-solid fa-calculator"></i>
+
                 </div>
 
                 <h3>
@@ -2114,10 +3129,12 @@
                 </h3>
 
                 <p>
+
                     ITR filing support for individuals,
                     HUFs, professionals and businesses,
-                    along with income reconciliation and
-                    tax planning support.
+                    along with income reconciliation
+                    and tax planning support.
+
                 </p>
 
                 <a href="#contact"
@@ -2133,7 +3150,7 @@
 
 
 
-            <!-- SERVICE 03 -->
+            <!-- TDS -->
 
             <article class="service-card reveal">
 
@@ -2142,7 +3159,9 @@
                 </span>
 
                 <div class="service-icon">
+
                     <i class="fa-solid fa-chart-line"></i>
+
                 </div>
 
                 <h3>
@@ -2150,9 +3169,12 @@
                 </h3>
 
                 <p>
-                    TDS deduction, payment, quarterly
-                    return preparation, reconciliation,
-                    certificates and compliance support.
+
+                    TDS deduction, payment,
+                    quarterly return preparation,
+                    reconciliation, certificates
+                    and compliance support.
+
                 </p>
 
                 <a href="#contact"
@@ -2168,7 +3190,7 @@
 
 
 
-            <!-- SERVICE 04 -->
+            <!-- ACCOUNTING -->
 
             <article class="service-card reveal">
 
@@ -2177,7 +3199,9 @@
                 </span>
 
                 <div class="service-icon">
+
                     <i class="fa-solid fa-users"></i>
+
                 </div>
 
                 <h3>
@@ -2185,9 +3209,12 @@
                 </h3>
 
                 <p>
-                    Remote bookkeeping, ledger maintenance,
-                    bank reconciliation, accounts payable,
-                    receivables and financial statement preparation.
+
+                    Remote bookkeeping, ledger
+                    maintenance, bank reconciliation,
+                    accounts payable, receivables
+                    and financial statement preparation.
+
                 </p>
 
                 <a href="#contact"
@@ -2203,7 +3230,7 @@
 
 
 
-            <!-- SERVICE 05 -->
+            <!-- AUDIT -->
 
             <article class="service-card reveal">
 
@@ -2212,7 +3239,9 @@
                 </span>
 
                 <div class="service-icon">
+
                     <i class="fa-solid fa-shield-halved"></i>
+
                 </div>
 
                 <h3>
@@ -2220,9 +3249,13 @@
                 </h3>
 
                 <p>
-                    Accounting and audit support, financial
-                    statement preparation, tax audit assistance
-                    and internal review engagements, as applicable.
+
+                    Accounting and audit support,
+                    financial statement preparation,
+                    tax audit assistance and
+                    internal review engagements,
+                    as applicable.
+
                 </p>
 
                 <a href="#contact"
@@ -2238,7 +3271,7 @@
 
 
 
-            <!-- SERVICE 06 -->
+            <!-- REGISTRATION -->
 
             <article class="service-card reveal">
 
@@ -2247,7 +3280,9 @@
                 </span>
 
                 <div class="service-icon">
+
                     <i class="fa-regular fa-building"></i>
+
                 </div>
 
                 <h3>
@@ -2255,9 +3290,12 @@
                 </h3>
 
                 <p>
-                    Support for Pvt Ltd, LLP, Partnership
-                    and Sole Proprietorship setup along with
-                    applicable registration and compliance assistance.
+
+                    Support for Pvt Ltd, LLP,
+                    Partnership and Sole Proprietorship
+                    setup along with applicable
+                    registration and compliance assistance.
+
                 </p>
 
                 <a href="#contact"
@@ -2271,6 +3309,7 @@
 
             </article>
 
+
         </div>
 
     </div>
@@ -2279,13 +3318,14 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      STATS
-============================================================ -->
+========================================================== -->
 
 <section class="stats-section">
 
     <div class="container">
+
 
         <div class="stats-grid reveal">
 
@@ -2319,11 +3359,11 @@
             <div class="stat">
 
                 <div class="stat-number">
-                    100%
+                    Haryana
                 </div>
 
                 <div class="stat-label">
-                    Remote Support
+                    Current Service Area
                 </div>
 
             </div>
@@ -2332,11 +3372,11 @@
             <div class="stat">
 
                 <div class="stat-number">
-                    Pan
+                    PAN India
                 </div>
 
                 <div class="stat-label">
-                    India Service
+                    Future Client Reach
                 </div>
 
             </div>
@@ -2350,57 +3390,77 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      ABOUT
-============================================================ -->
+========================================================== -->
 
 <section class="about-section"
          id="about">
 
     <div class="container">
 
+
         <div class="about-grid">
 
 
             <div class="about-box reveal">
 
+
                 <small>
                     M|&|K ACCOUNTS
                 </small>
 
+
                 <h3>
+
                     Your Accounts.<br>
+
                     Our Responsibility.
+
                 </h3>
 
+
                 <p>
-                    Reliable accounting support without
-                    the overhead of maintaining a full-time
-                    accounts department.
+
+                    Reliable accounting support
+                    without the overhead of maintaining
+                    a full-time accounts department.
+
                 </p>
+
 
             </div>
 
 
+
             <div class="about-content reveal">
+
 
                 <div class="section-kicker">
                     Why Choose Us
                 </div>
 
+
                 <h2 class="section-title">
+
                     Professional support,
                     without the complexity.
+
                 </h2>
 
+
                 <p>
-                    M|&|K Accounts provides remote accounting
-                    and tax-compliance support for businesses
-                    and individuals. Our approach is simple:
-                    keep records organised, make compliance
-                    easier and provide clear financial information
-                    when you need it.
+
+                    M|&|K Accounts provides professional
+                    accounting, taxation and compliance
+                    support to businesses, professionals
+                    and individuals. We are currently
+                    serving clients across Haryana through
+                    remote operations, while looking forward
+                    to working with clients PAN India.
+
                 </p>
+
 
                 <div class="benefits">
 
@@ -2408,17 +3468,21 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
+
                             <i class="fa-solid fa-check"></i>
+
                         </div>
 
                         <div>
+
                             <strong>
                                 Remote Operations
                             </strong>
 
                             <span>
-                                Work with us from anywhere in India.
+                                Currently serving clients across Haryana.
                             </span>
+
                         </div>
 
                     </div>
@@ -2427,10 +3491,13 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
+
                             <i class="fa-solid fa-check"></i>
+
                         </div>
 
                         <div>
+
                             <strong>
                                 Timely Compliance
                             </strong>
@@ -2438,6 +3505,7 @@
                             <span>
                                 Stay organised around your filing deadlines.
                             </span>
+
                         </div>
 
                     </div>
@@ -2446,10 +3514,13 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
+
                             <i class="fa-solid fa-check"></i>
+
                         </div>
 
                         <div>
+
                             <strong>
                                 Clear Communication
                             </strong>
@@ -2457,6 +3528,7 @@
                             <span>
                                 Straightforward explanations and support.
                             </span>
+
                         </div>
 
                     </div>
@@ -2465,10 +3537,13 @@
                     <div class="benefit">
 
                         <div class="benefit-icon">
+
                             <i class="fa-solid fa-check"></i>
+
                         </div>
 
                         <div>
+
                             <strong>
                                 Flexible Engagement
                             </strong>
@@ -2476,12 +3551,60 @@
                             <span>
                                 Suitable for part-time and outsourced accounts.
                             </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+
+                            <i class="fa-solid fa-earth-asia"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                PAN India Expansion
+                            </strong>
+
+                            <span>
+                                Looking forward to working with clients across India.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Based in Hisar
+                            </strong>
+
+                            <span>
+                                Serving Haryana through remote operations.
+                            </span>
+
                         </div>
 
                     </div>
 
 
                 </div>
+
 
             </div>
 
@@ -2493,26 +3616,35 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      PROCESS
-============================================================ -->
+========================================================== -->
 
 <section class="process-section">
 
     <div class="container">
 
+
         <div class="section-kicker reveal">
             How We Work
         </div>
 
+
         <h2 class="section-title reveal">
+
             Simple. Structured.<br>
+
             Reliable.
+
         </h2>
 
+
         <p class="section-intro reveal">
-            A straightforward process designed to make
-            accounting and compliance easier for you.
+
+            A straightforward process designed
+            to make accounting and compliance
+            easier for you.
+
         </p>
 
 
@@ -2530,9 +3662,11 @@
                 </h3>
 
                 <p>
+
                     We understand your business,
                     transactions, accounting system
                     and compliance requirements.
+
                 </p>
 
             </div>
@@ -2549,9 +3683,11 @@
                 </h3>
 
                 <p>
-                    Documents, invoices, bank transactions
-                    and accounting records are organised
-                    systematically.
+
+                    Documents, invoices, bank
+                    transactions and accounting records
+                    are organised systematically.
+
                 </p>
 
             </div>
@@ -2568,9 +3704,12 @@
                 </h3>
 
                 <p>
-                    Required accounting and tax compliances
-                    are prepared and handled according to
-                    the applicable requirements.
+
+                    Required accounting and tax
+                    compliances are prepared and
+                    handled according to applicable
+                    requirements.
+
                 </p>
 
             </div>
@@ -2587,9 +3726,11 @@
                 </h3>
 
                 <p>
+
                     We remain available for queries,
-                    reconciliations, reports and ongoing
-                    accounting support.
+                    reconciliations, reports and
+                    ongoing accounting support.
+
                 </p>
 
             </div>
@@ -2603,9 +3744,9 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      REVIEWS
-============================================================ -->
+========================================================== -->
 
 <section class="reviews-section"
          id="reviews">
@@ -2614,6 +3755,7 @@
 
 
         <div class="reviews-header reveal">
+
 
             <div>
 
@@ -2633,9 +3775,11 @@
                rel="noopener"
                class="google-rating">
 
+
                 <div class="google-score">
                     5.0
                 </div>
+
 
                 <div>
 
@@ -2649,7 +3793,9 @@
 
                 </div>
 
+
             </a>
+
 
         </div>
 
@@ -2660,7 +3806,9 @@
 
             <div class="review-card reveal">
 
+
                 <div class="review-top">
+
 
                     <div class="review-person">
 
@@ -2682,17 +3830,24 @@
 
                     </div>
 
+
                     <div class="review-stars">
                         ★★★★★
                     </div>
 
+
                 </div>
 
+
                 <p class="review-text">
+
                     I am very impressed with the service.
-                    Professional, timely, and extremely helpful
-                    throughout the entire tax filing process.
+                    Professional, timely, and extremely
+                    helpful throughout the entire tax
+                    filing process.
+
                 </p>
+
 
             </div>
 
@@ -2700,7 +3855,9 @@
 
             <div class="review-card reveal">
 
+
                 <div class="review-top">
+
 
                     <div class="review-person">
 
@@ -2722,17 +3879,24 @@
 
                     </div>
 
+
                     <div class="review-stars">
                         ★★★★★
                     </div>
 
+
                 </div>
 
+
                 <p class="review-text">
-                    Loved it. The team handled all my GST filings
-                    seamlessly and explained every step clearly.
-                    Highly recommend to any business owner.
+
+                    Loved it. The team handled all my GST
+                    filings seamlessly and explained every
+                    step clearly. Highly recommend to any
+                    business owner.
+
                 </p>
+
 
             </div>
 
@@ -2740,7 +3904,9 @@
 
             <div class="review-card reveal">
 
+
                 <div class="review-top">
+
 
                     <div class="review-person">
 
@@ -2762,17 +3928,24 @@
 
                     </div>
 
+
                     <div class="review-stars">
                         ★★★★★
                     </div>
 
+
                 </div>
 
+
                 <p class="review-text">
-                    Quick turnaround, transparent pricing and
-                    thorough documentation. Exactly what I needed
-                    for my small business accounts.
+
+                    Quick turnaround, transparent pricing
+                    and thorough documentation. Exactly
+                    what I needed for my small business
+                    accounts.
+
                 </p>
+
 
             </div>
 
@@ -2780,7 +3953,9 @@
 
             <div class="review-card reveal">
 
+
                 <div class="review-top">
+
 
                     <div class="review-person">
 
@@ -2802,17 +3977,23 @@
 
                     </div>
 
+
                     <div class="review-stars">
                         ★★★★★
                     </div>
 
+
                 </div>
 
+
                 <p class="review-text">
-                    Excellent accounting service. Very knowledgeable
-                    staff and easy to work with. They saved me both
-                    time and money.
+
+                    Excellent accounting service. Very
+                    knowledgeable staff and easy to work
+                    with. They saved me both time and money.
+
                 </p>
+
 
             </div>
 
@@ -2820,13 +4001,21 @@
         </div>
 
 
-        <div style="text-align:center;margin-top:40px;">
+
+        <div style="
+            text-align:center;
+            margin-top:40px;
+        ">
+
 
             <a href="https://maps.app.goo.gl/D4xPndjc2F5G5AT7A"
                target="_blank"
                rel="noopener"
-               class="btn btn-outline"
-               style="color:#111;border-color:#aaa;">
+               class="btn"
+               style="
+                    color:#111;
+                    border-color:#aaa;
+               ">
 
                 <i class="fa-brands fa-google"></i>
 
@@ -2834,7 +4023,9 @@
 
             </a>
 
+
         </div>
+
 
     </div>
 
@@ -2842,18 +4033,20 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      FAQ
-============================================================ -->
+========================================================== -->
 
 <section class="faq-section"
          id="faq">
 
     <div class="container">
 
+
         <div class="section-kicker">
             Frequently Asked Questions
         </div>
+
 
         <h2 class="section-title">
             Questions, answered.
@@ -2865,6 +4058,38 @@
 
             <div class="faq-item">
 
+
+                <button class="faq-question">
+
+                    What areas do you currently serve?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        M|&|K Accounts is currently serving
+                        clients across Haryana through remote
+                        operations. We are also looking forward
+                        to expanding our client base and working
+                        with clients PAN India.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+
                 <button class="faq-question">
 
                     Do you provide remote accounting services?
@@ -2873,21 +4098,27 @@
 
                 </button>
 
+
                 <div class="faq-answer">
 
                     <p>
-                        Yes. M|&|K Accounts operates remotely,
-                        allowing clients to share documents,
-                        accounting data and requirements digitally.
-                        Services can be provided to clients across India.
+
+                        Yes. Our accounting operations are
+                        primarily handled remotely, allowing
+                        clients to share documents, accounting
+                        data and requirements digitally.
+
                     </p>
 
                 </div>
 
+
             </div>
 
 
+
             <div class="faq-item">
+
 
                 <button class="faq-question">
 
@@ -2897,21 +4128,28 @@
 
                 </button>
 
+
                 <div class="faq-answer">
 
                     <p>
-                        Our accounting services include bookkeeping,
-                        ledger maintenance, bank reconciliation,
-                        accounts payable and receivable, accounting
-                        entries and financial statement preparation.
+
+                        Our accounting services include
+                        bookkeeping, ledger maintenance,
+                        bank reconciliation, accounts payable
+                        and receivable, accounting entries and
+                        financial statement preparation.
+
                     </p>
 
                 </div>
 
+
             </div>
 
 
+
             <div class="faq-item">
+
 
                 <button class="faq-question">
 
@@ -2921,21 +4159,27 @@
 
                 </button>
 
+
                 <div class="faq-answer">
 
                     <p>
+
                         We provide GST registration and return
-                        filing support, including GSTR-1 and GSTR-3B,
-                        along with reconciliation and other applicable
-                        GST compliance assistance.
+                        filing support, including GSTR-1 and
+                        GSTR-3B, along with reconciliation and
+                        other applicable GST compliance assistance.
+
                     </p>
 
                 </div>
 
+
             </div>
 
 
+
             <div class="faq-item">
+
 
                 <button class="faq-question">
 
@@ -2945,20 +4189,27 @@
 
                 </button>
 
+
                 <div class="faq-answer">
 
                     <p>
-                        Yes. We provide Income Tax return preparation
-                        and filing support for eligible individuals,
-                        professionals, HUFs and businesses.
+
+                        Yes. We provide Income Tax return
+                        preparation and filing support for
+                        eligible individuals, professionals,
+                        HUFs and businesses.
+
                     </p>
 
                 </div>
 
+
             </div>
 
 
+
             <div class="faq-item">
+
 
                 <button class="faq-question">
 
@@ -2968,42 +4219,24 @@
 
                 </button>
 
-                <div class="faq-answer">
-
-                    <p>
-                        Contact us by WhatsApp, phone or email with
-                        your basic requirements. We can understand
-                        your work volume and compliance requirements
-                        and then discuss the appropriate engagement.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question">
-
-                    Do you have a physical office?
-
-                    <i class="fa-solid fa-plus"></i>
-
-                </button>
 
                 <div class="faq-answer">
 
                     <p>
-                        M|&|K Accounts primarily operates through
-                        remote operations. Client communication,
-                        document sharing and accounting work can
-                        be handled digitally.
+
+                        Contact us through WhatsApp, phone or
+                        email with your basic requirements.
+                        We can understand your work volume and
+                        compliance requirements and discuss the
+                        appropriate engagement.
+
                     </p>
 
                 </div>
 
+
             </div>
+
 
 
         </div>
@@ -3014,39 +4247,51 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      CONTACT
-============================================================ -->
+========================================================== -->
 
 <section class="contact-section"
          id="contact">
 
     <div class="container">
 
+
         <div class="contact-grid">
 
 
             <div class="reveal">
 
+
                 <div class="section-kicker">
                     Get In Touch
                 </div>
 
+
                 <h2 class="section-title">
+
                     Let's take care
                     of your accounts.
+
                 </h2>
 
+
                 <p class="section-intro">
-                    Tell us what you need help with.
-                    Whether it is regular accounting,
-                    GST compliance, Income Tax or TDS,
-                    we are happy to discuss your requirements.
+
+                    M|&|K Accounts is currently serving
+                    clients across Haryana through remote
+                    operations. We are looking forward
+                    to working with businesses and individuals
+                    from across India as we expand our services
+                    PAN India.
+
                 </p>
 
 
                 <div class="contact-details">
 
+
+                    <!-- MANAV -->
 
                     <div class="contact-item">
 
@@ -3070,6 +4315,8 @@
                     </div>
 
 
+                    <!-- KRISH -->
+
                     <div class="contact-item">
 
                         <i class="fa-solid fa-phone"></i>
@@ -3092,6 +4339,8 @@
                     </div>
 
 
+                    <!-- PRIMARY EMAIL -->
+
                     <div class="contact-item">
 
                         <i class="fa-regular fa-envelope"></i>
@@ -3099,7 +4348,31 @@
                         <div>
 
                             <div class="contact-item-label">
-                                Email
+                                Primary Email
+                            </div>
+
+                            <a href="mailto:Info@mkaccounts.in"
+                               class="contact-item-value">
+
+                                Info@mkaccounts.in
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SECONDARY EMAIL -->
+
+                    <div class="contact-item">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <div>
+
+                            <div class="contact-item-label">
+                                Secondary Email
                             </div>
 
                             <a href="mailto:ta.solution.hisar@gmail.com"
@@ -3114,6 +4387,8 @@
                     </div>
 
 
+                    <!-- CURRENT SERVICE AREA -->
+
                     <div class="contact-item">
 
                         <i class="fa-solid fa-location-dot"></i>
@@ -3121,11 +4396,63 @@
                         <div>
 
                             <div class="contact-item-label">
-                                Service Area
+                                Current Service Area
                             </div>
 
                             <div class="contact-item-value">
-                                Remote Operations · India
+
+                                Haryana
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PAN INDIA -->
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-earth-asia"></i>
+
+                        <div>
+
+                            <div class="contact-item-label">
+                                Looking Forward To
+                            </div>
+
+                            <div class="contact-item-value">
+
+                                Working with clients PAN India
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-map-pin"></i>
+
+                        <div>
+
+                            <div class="contact-item-label">
+                                Address
+                            </div>
+
+                            <div class="contact-item-value">
+
+                                Street No. 5,
+                                Chotu Ram Colony,<br>
+
+                                Hisar, Haryana -
+                                125001
+
                             </div>
 
                         </div>
@@ -3135,30 +4462,64 @@
 
                 </div>
 
+
             </div>
 
 
 
+            <!-- CONTACT CARD -->
+
             <div class="contact-card reveal">
+
 
                 <h3>
                     Start a conversation.
                 </h3>
 
+
                 <p>
-                    The quickest way to reach us is WhatsApp.
-                    Send your requirement and we will get back
-                    to you.
+
+                    Tell us about your accounting,
+                    taxation or compliance requirement.
+                    Send us a message and we will get
+                    back to you.
+
                 </p>
 
 
                 <div class="contact-buttons">
 
 
+                    <!-- PRIMARY EMAIL -->
+
+                    <a href="mailto:Info@mkaccounts.in"
+                       class="btn btn-primary">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        Email Us
+
+                    </a>
+
+
+                    <!-- SECONDARY EMAIL -->
+
+                    <a href="mailto:ta.solution.hisar@gmail.com"
+                       class="btn btn-outline">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        Secondary Email
+
+                    </a>
+
+
+                    <!-- WHATSAPP MANAV -->
+
                     <a href="https://wa.me/919817571705"
                        target="_blank"
                        rel="noopener"
-                       class="btn btn-primary">
+                       class="btn btn-outline">
 
                         <i class="fa-brands fa-whatsapp"></i>
 
@@ -3166,6 +4527,8 @@
 
                     </a>
 
+
+                    <!-- WHATSAPP KRISH -->
 
                     <a href="https://wa.me/919992075501"
                        target="_blank"
@@ -3179,6 +4542,8 @@
                     </a>
 
 
+                    <!-- CALL -->
+
                     <a href="tel:+919817571705"
                        class="btn btn-outline">
 
@@ -3189,15 +4554,7 @@
                     </a>
 
 
-                    <a href="mailto:ta.solution.hisar@gmail.com"
-                       class="btn btn-outline">
-
-                        <i class="fa-regular fa-envelope"></i>
-
-                        Send Email
-
-                    </a>
-
+                    <!-- GOOGLE MAPS -->
 
                     <a href="https://maps.app.goo.gl/D4xPndjc2F5G5AT7A"
                        target="_blank"
@@ -3210,9 +4567,12 @@
 
                     </a>
 
+
                 </div>
 
+
             </div>
+
 
         </div>
 
@@ -3225,11 +4585,12 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      FOOTER
-============================================================ -->
+========================================================== -->
 
 <footer>
+
 
     <div class="container">
 
@@ -3237,93 +4598,144 @@
         <div class="footer-top">
 
 
+            <!-- BRAND -->
+
             <div class="footer-brand">
+
 
                 <a href="#home"
                    class="brand">
+
 
                     <div class="brand-logo">
                         M|K
                     </div>
 
+
                     <div class="brand-text">
+
 
                         <div class="brand-name">
                             M|&|K ACCOUNTS
                         </div>
 
+
                         <div class="brand-sub">
                             REMOTE OPERATIONS
                         </div>
 
+
                     </div>
+
 
                 </a>
 
 
                 <p>
-                    Professional GST, Income Tax, TDS,
-                    bookkeeping and accounting support
-                    delivered remotely.
+
+                    Professional GST, Income Tax,
+                    TDS, bookkeeping and accounting
+                    support. Currently serving clients
+                    across Haryana and looking forward
+                    to working with clients PAN India.
+
                 </p>
+
 
             </div>
 
 
 
+            <!-- SERVICES -->
+
             <div>
+
 
                 <div class="footer-title">
                     Services
                 </div>
 
+
                 <div class="footer-links">
+
 
                     <a href="#services">
                         GST Returns
                     </a>
 
+
                     <a href="#services">
                         Income Tax
                     </a>
+
 
                     <a href="#services">
                         TDS Compliance
                     </a>
 
+
                     <a href="#services">
                         Part-Time Accounting
                     </a>
+
+
+                    <a href="#services">
+                        Audit & Assurance
+                    </a>
+
 
                     <a href="#services">
                         Business Registration
                     </a>
 
+
                 </div>
+
 
             </div>
 
 
 
+            <!-- CONTACT -->
+
             <div>
+
 
                 <div class="footer-title">
                     Contact
                 </div>
 
+
                 <div class="footer-links">
 
+
                     <a href="tel:+919817571705">
+
                         +91 98175 71705
+
                     </a>
+
 
                     <a href="tel:+919992075501">
+
                         +91 99920 75501
+
                     </a>
 
-                    <a href="mailto:ta.solution.hisar@gmail.com">
-                        ta.solution.hisar@gmail.com
+
+                    <a href="mailto:Info@mkaccounts.in">
+
+                        Info@mkaccounts.in
+
                     </a>
+
+
+                    <a href="mailto:ta.solution.hisar@gmail.com">
+
+                        ta.solution.hisar@gmail.com
+
+                    </a>
+
 
                     <a href="https://maps.app.goo.gl/D4xPndjc2F5G5AT7A"
                        target="_blank"
@@ -3333,7 +4745,9 @@
 
                     </a>
 
+
                 </div>
+
 
             </div>
 
@@ -3341,28 +4755,41 @@
         </div>
 
 
+
         <div class="footer-bottom">
 
-            <span>
-                © <span id="year"></span>
-                M|&|K Accounts. All Rights Reserved.
-            </span>
 
             <span>
-                Remote Accounting & Compliance Services
+
+                ©
+                <span id="year"></span>
+                M|&|K Accounts.
+                All Rights Reserved.
+
             </span>
+
+
+            <span>
+
+                Haryana · Remote Operations ·
+                PAN India Expansion
+
+            </span>
+
 
         </div>
 
+
     </div>
+
 
 </footer>
 
 
 
-<!-- ============================================================
-     FLOATING BUTTONS
-============================================================ -->
+<!-- =========================================================
+     FLOATING WHATSAPP
+========================================================== -->
 
 <a href="https://wa.me/919817571705"
    class="whatsapp-float"
@@ -3375,6 +4802,11 @@
 </a>
 
 
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================== -->
+
 <button class="back-top"
         id="backTop"
         aria-label="Back to top">
@@ -3385,160 +4817,272 @@
 
 
 
-<!-- ============================================================
+<!-- =========================================================
      JAVASCRIPT
-============================================================ -->
+========================================================== -->
 
 <script>
 
 
-/* ============================================================
+/* =========================================================
    MOBILE MENU
-============================================================ */
+========================================================== */
 
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+const menuBtn =
+    document.getElementById("menuBtn");
 
-menuBtn.addEventListener("click", () => {
-
-    navLinks.classList.toggle("active");
-
-    const icon = menuBtn.querySelector("i");
-
-    if (navLinks.classList.contains("active")) {
-
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
-
-    } else {
-
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-
-    }
-
-});
+const navLinks =
+    document.getElementById("navLinks");
 
 
-/* Close mobile menu after clicking */
+menuBtn.addEventListener(
+    "click",
+    () => {
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        navLinks.classList.remove("active");
-
-        const icon = menuBtn.querySelector("i");
-
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-
-    });
-
-});
+        navLinks.classList.toggle(
+            "active"
+        );
 
 
-
-/* ============================================================
-   HEADER SCROLL EFFECT
-============================================================ */
-
-const header = document.getElementById("header");
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 50) {
-
-        header.classList.add("scrolled");
-
-    } else {
-
-        header.classList.remove("scrolled");
-
-    }
-
-});
+        const icon =
+            menuBtn.querySelector("i");
 
 
+        if (
+            navLinks.classList.contains(
+                "active"
+            )
+        ) {
 
-/* ============================================================
-   BACK TO TOP
-============================================================ */
+            icon.classList.remove(
+                "fa-bars"
+            );
 
-const backTop = document.getElementById("backTop");
+            icon.classList.add(
+                "fa-xmark"
+            );
 
-window.addEventListener("scroll", () => {
+        } else {
 
-    if (window.scrollY > 500) {
+            icon.classList.remove(
+                "fa-xmark"
+            );
 
-        backTop.classList.add("show");
-
-    } else {
-
-        backTop.classList.remove("show");
-
-    }
-
-});
-
-
-backTop.addEventListener("click", () => {
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-});
-
-
-
-/* ============================================================
-   FAQ ACCORDION
-============================================================ */
-
-const faqItems = document.querySelectorAll(".faq-item");
-
-faqItems.forEach(item => {
-
-    const question = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
-
-    question.addEventListener("click", () => {
-
-        const isActive = item.classList.contains("active");
-
-
-        faqItems.forEach(other => {
-
-            other.classList.remove("active");
-
-            other.querySelector(".faq-answer").style.maxHeight = null;
-
-        });
-
-
-        if (!isActive) {
-
-            item.classList.add("active");
-
-            answer.style.maxHeight =
-                answer.scrollHeight + "px";
+            icon.classList.add(
+                "fa-bars"
+            );
 
         }
 
+    }
+);
+
+
+
+/* =========================================================
+   CLOSE MOBILE MENU
+========================================================== */
+
+document
+    .querySelectorAll(
+        ".nav-links a"
+    )
+    .forEach(link => {
+
+        link.addEventListener(
+            "click",
+            () => {
+
+                navLinks.classList.remove(
+                    "active"
+                );
+
+
+                const icon =
+                    menuBtn.querySelector(
+                        "i"
+                    );
+
+
+                icon.classList.remove(
+                    "fa-xmark"
+                );
+
+                icon.classList.add(
+                    "fa-bars"
+                );
+
+            }
+        );
+
     });
 
-});
+
+
+/* =========================================================
+   HEADER SCROLL
+========================================================== */
+
+const header =
+    document.getElementById(
+        "header"
+    );
+
+
+window.addEventListener(
+    "scroll",
+    () => {
+
+        if (
+            window.scrollY > 50
+        ) {
+
+            header.classList.add(
+                "scrolled"
+            );
+
+        } else {
+
+            header.classList.remove(
+                "scrolled"
+            );
+
+        }
+
+    }
+);
 
 
 
-/* ============================================================
+/* =========================================================
+   BACK TO TOP
+========================================================== */
+
+const backTop =
+    document.getElementById(
+        "backTop"
+    );
+
+
+window.addEventListener(
+    "scroll",
+    () => {
+
+        if (
+            window.scrollY > 500
+        ) {
+
+            backTop.classList.add(
+                "show"
+            );
+
+        } else {
+
+            backTop.classList.remove(
+                "show"
+            );
+
+        }
+
+    }
+);
+
+
+backTop.addEventListener(
+    "click",
+    () => {
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    }
+);
+
+
+
+/* =========================================================
+   FAQ ACCORDION
+========================================================== */
+
+const faqItems =
+    document.querySelectorAll(
+        ".faq-item"
+    );
+
+
+faqItems.forEach(
+    item => {
+
+        const question =
+            item.querySelector(
+                ".faq-question"
+            );
+
+        const answer =
+            item.querySelector(
+                ".faq-answer"
+            );
+
+
+        question.addEventListener(
+            "click",
+            () => {
+
+                const isActive =
+                    item.classList.contains(
+                        "active"
+                    );
+
+
+                faqItems.forEach(
+                    other => {
+
+                        other.classList.remove(
+                            "active"
+                        );
+
+                        other.querySelector(
+                            ".faq-answer"
+                        ).style.maxHeight =
+                            null;
+
+                    }
+                );
+
+
+                if (!isActive) {
+
+                    item.classList.add(
+                        "active"
+                    );
+
+                    answer.style.maxHeight =
+                        answer.scrollHeight +
+                        "px";
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+
+/* =========================================================
    SCROLL REVEAL
-============================================================ */
+========================================================== */
 
 const revealElements =
-    document.querySelectorAll(".reveal");
+    document.querySelectorAll(
+        ".reveal"
+    );
 
 
 const observer =
@@ -3546,17 +5090,25 @@ const observer =
 
         (entries, observer) => {
 
-            entries.forEach(entry => {
+            entries.forEach(
+                entry => {
 
-                if (entry.isIntersecting) {
+                    if (
+                        entry.isIntersecting
+                    ) {
 
-                    entry.target.classList.add("visible");
+                        entry.target.classList.add(
+                            "visible"
+                        );
 
-                    observer.unobserve(entry.target);
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
 
                 }
-
-            });
+            );
 
         },
 
@@ -3567,61 +5119,89 @@ const observer =
     );
 
 
-revealElements.forEach(element => {
+revealElements.forEach(
+    element => {
 
-    observer.observe(element);
+        observer.observe(
+            element
+        );
 
-});
+    }
+);
 
 
 
-/* ============================================================
+/* =========================================================
    CURRENT YEAR
-============================================================ */
+========================================================== */
 
-document.getElementById("year").textContent =
+document.getElementById(
+    "year"
+).textContent =
     new Date().getFullYear();
 
 
 
-/* ============================================================
-   SMOOTH ANCHOR OFFSET
-============================================================ */
+/* =========================================================
+   SMOOTH ANCHOR SCROLL
+========================================================== */
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document
+    .querySelectorAll(
+        'a[href^="#"]'
+    )
+    .forEach(anchor => {
 
-    anchor.addEventListener("click", function(e) {
+        anchor.addEventListener(
+            "click",
+            function(e) {
 
-        const target =
-            document.querySelector(this.getAttribute("href"));
+                const target =
+                    document.querySelector(
+                        this.getAttribute(
+                            "href"
+                        )
+                    );
 
-        if (!target) return;
 
-        e.preventDefault();
+                if (!target)
+                    return;
 
-        const headerHeight =
-            document.querySelector("header").offsetHeight;
 
-        const position =
-            target.getBoundingClientRect().top +
-            window.pageYOffset -
-            headerHeight;
+                e.preventDefault();
 
-        window.scrollTo({
 
-            top: position,
+                const headerHeight =
+                    document.querySelector(
+                        "header"
+                    ).offsetHeight;
 
-            behavior: "smooth"
 
-        });
+                const position =
+                    target.getBoundingClientRect()
+                        .top +
+                    window.pageYOffset -
+                    headerHeight;
+
+
+                window.scrollTo({
+
+                    top: position,
+
+                    behavior: "smooth"
+
+                });
+
+            }
+        );
 
     });
-
-});
 
 
 </script>
 
 
 </body>
+
 </html>
+```
