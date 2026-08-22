@@ -656,59 +656,7 @@
 
             min-height: 520px;
         }
-
-
-        /* =========================================================
-           REAL LOGO - FLOATING
-        ========================================================== */
-
-        .floating-logo {
-
-            position: absolute;
-
-            top: 0;
-
-            right: 15%;
-
-            width: 185px;
-
-            height: 185px;
-
-            background: white;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            padding: 18px;
-
-            box-shadow:
-                0 25px 70px
-                rgba(0,0,0,.35);
-
-            animation:
-                floatLogo 5s
-                ease-in-out infinite;
-
-            overflow: hidden;
-        }
-
-
-        .floating-logo img {
-
-            width: 100%;
-
-            height: 100%;
-
-            object-fit: contain;
-
-            display: block;
-        }
-
-
-        @keyframes floatLogo {
+@keyframes floatLogo {
 
             0%,100% {
                 transform:
@@ -2340,21 +2288,7 @@
 
         justify-content:center;
     }
-
-    .floating-logo{
-
-        width:125px;
-        height:125px;
-
-        top:0;
-        right:4%;
-
-        padding:12px;
-
-        z-index:2;
-    }
-
-    .business-card{
+.business-card{
 
         width:100%;
 
@@ -2921,18 +2855,7 @@
 
         min-height:330px;
     }
-
-    .floating-logo{
-
-        width:105px;
-        height:105px;
-
-        right:0;
-
-        padding:10px;
-    }
-
-    .business-card{
+.business-card{
 
         margin-top:75px;
 
@@ -3028,6 +2951,593 @@
 
 }
 
+
+
+/* =========================================================
+   RESPONSIVE PATCH - DESKTOP + TABLET + MOBILE
+   Added without changing the desktop design language.
+========================================================= */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container,
+.navbar,
+.hero-grid,
+.services-grid,
+.stats-grid,
+.about-grid,
+.process-grid,
+.reviews-grid,
+.contact-grid,
+.footer-top {
+    min-width: 0;
+}
+
+.brand {
+    min-width: 0;
+}
+
+.brand-text {
+    min-width: 0;
+}
+
+.nav-links a,
+.btn,
+.hero-contact-number,
+.contact-item-value,
+.footer-links a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* Tablets / small laptops */
+@media (max-width: 1100px) and (min-width: 901px) {
+    .container {
+        width: min(calc(100% - 40px), var(--container));
+    }
+
+    .hero-grid {
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 6vw, 72px);
+    }
+
+    .about-grid,
+    .contact-grid {
+        gap: 55px;
+    }
+
+    .footer-top {
+        gap: 30px;
+    }
+}
+
+/* Phones and tablets */
+@media (max-width: 900px) {
+    .container {
+        width: calc(100% - 32px);
+        max-width: 100%;
+    }
+
+    section {
+        overflow: hidden;
+    }
+
+    /* Header */
+    header {
+        position: fixed;
+    }
+
+    .navbar {
+        height: 68px;
+        gap: 12px;
+    }
+
+    .brand {
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: calc(100% - 54px);
+    }
+
+    .brand-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .brand-name {
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    .brand-sub {
+        white-space: nowrap;
+    }
+
+    .menu-btn {
+        flex: 0 0 42px;
+        display: flex;
+    }
+
+    .nav-links {
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-height: calc(100vh - 68px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-links a {
+        width: 100%;
+        display: block;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .hero-content,
+    .hero-visual {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        font-size: clamp(42px, 13vw, 62px);
+        overflow-wrap: anywhere;
+    }
+
+    .hero-description {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        min-width: 0;
+    }
+
+    .hero-contact {
+        width: 100%;
+    }
+
+    .hero-contact-item {
+        min-width: 0;
+    }
+
+    .hero-visual {
+        min-height: 380px;
+        position: relative;
+        overflow: visible;
+    }
+.business-card {
+        width: min(100%, 450px);
+        min-width: 0;
+    }
+
+    .card-top {
+        min-width: 0;
+    }
+
+    .card-top > div {
+        min-width: 0;
+        max-width: 48%;
+    }
+
+    .card-phone {
+        white-space: nowrap;
+    }
+
+    .card-footer {
+        min-width: 0;
+    }
+
+    /* Section headings */
+    .services-header,
+    .reviews-header {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .section-title {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .section-intro {
+        max-width: 100%;
+    }
+
+    /* Grids */
+    .services-grid,
+    .stats-grid,
+    .about-grid,
+    .process-grid,
+    .reviews-grid,
+    .contact-grid,
+    .footer-top {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .service-card,
+    .process-card,
+    .review-card,
+    .about-box,
+    .about-content,
+    .contact-card {
+        min-width: 0;
+    }
+
+    .service-card p,
+    .process-card p,
+    .review-text,
+    .about-content p,
+    .faq-answer p,
+    .contact-item-value,
+    .footer-brand p {
+        overflow-wrap: anywhere;
+    }
+
+    /* About */
+    .about-box::before {
+        font-size: clamp(160px, 42vw, 240px);
+    }
+
+    /* Reviews */
+    .google-rating {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .google-text {
+        overflow-wrap: anywhere;
+    }
+
+    /* FAQ */
+    .faq-wrapper {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .faq-question {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .faq-question i {
+        flex: 0 0 auto;
+    }
+
+    /* Contact */
+    .contact-card {
+        width: 100%;
+    }
+
+    .contact-buttons .btn {
+        min-width: 0;
+    }
+
+    /* Floating controls */
+    .whatsapp-float,
+    .back-top {
+        z-index: 10000;
+    }
+}
+
+/* Small phones */
+@media (max-width: 600px) {
+    .container {
+        width: calc(100% - 26px);
+    }
+
+    .navbar {
+        height: 64px;
+    }
+
+    .brand-logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .brand-name {
+        font-size: 12px;
+        letter-spacing: .5px;
+    }
+
+    .brand-sub {
+        font-size: 6.5px;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        top: 64px;
+        max-height: calc(100vh - 64px);
+    }
+
+    .hero {
+        padding-top: 64px;
+    }
+
+    .hero-grid {
+        padding: 50px 0 55px;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 12.5vw, 52px);
+        letter-spacing: -1.2px;
+    }
+
+    .rating-line {
+        align-items: flex-start;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-contact-item:last-child {
+        grid-column: auto;
+    }
+
+    .hero-visual {
+        min-height: 325px;
+    }
+.business-card {
+        width: 100%;
+        max-width: 450px;
+        margin-top: 72px;
+        padding: 16px 14px 12px;
+    }
+
+    .card-top {
+        gap: 8px;
+    }
+
+    .card-top > div {
+        max-width: 47%;
+        font-size: 11px;
+    }
+
+    .card-phone {
+        font-size: 8.5px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .card-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .card-title {
+        font-size: clamp(17px, 5vw, 20px);
+        overflow-wrap: anywhere;
+    }
+
+    .card-services {
+        font-size: 10px;
+    }
+
+    .card-footer {
+        font-size: 7px;
+    }
+
+    section {
+        padding: 62px 0;
+    }
+
+    .section-title {
+        font-size: clamp(32px, 9.5vw, 42px);
+    }
+
+    .services-header,
+    .reviews-header {
+        margin-bottom: 35px;
+    }
+
+    .service-card {
+        padding: 27px 20px 30px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat {
+        padding: 20px 8px;
+    }
+
+    .stat-number {
+        font-size: clamp(24px, 7vw, 30px);
+        overflow-wrap: anywhere;
+    }
+
+    .stat-label {
+        line-height: 1.35;
+    }
+
+    .about-box {
+        padding: 34px 24px;
+        min-height: 320px;
+    }
+
+    .about-box h3 {
+        font-size: clamp(31px, 9vw, 38px);
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+        margin-top: 40px;
+    }
+
+    .google-rating {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .review-card {
+        padding: 19px;
+    }
+
+    .review-top {
+        gap: 10px;
+    }
+
+    .review-stars {
+        white-space: nowrap;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        padding: 18px 0;
+    }
+
+    .contact-card {
+        padding: 27px 19px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+    }
+
+    .whatsapp-float {
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .back-top {
+        right: 14px;
+        bottom: 76px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+    .container {
+        width: calc(100% - 22px);
+    }
+
+    .brand {
+        gap: 7px;
+    }
+
+    .brand-logo {
+        width: 33px;
+        height: 33px;
+    }
+
+    .brand-name {
+        font-size: 11px;
+    }
+
+    .brand-sub {
+        font-size: 6px;
+    }
+
+    .menu-btn {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+.business-card {
+        margin-top: 66px;
+    }
+
+    .card-top > div {
+        font-size: 10px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-services {
+        font-size: 9px;
+    }
+
+    .card-footer {
+        font-size: 6.5px;
+    }
+
+    .stat-number {
+        font-size: 23px;
+    }
+}
+
+/* Accessibility / devices with no hover */
+@media (hover: none) {
+    .service-card:hover,
+    .review-card:hover,
+    .google-rating:hover,
+    .whatsapp-float:hover,
+    .back-top:hover {
+        transform: none;
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
 
     </style>
 
@@ -3271,14 +3781,7 @@
             <div class="hero-visual reveal">
 
 
-                <!-- REAL LOGO FROM LOGO.JPEG -->
 
-                <div class="floating-logo">
-
-                    <img src="./logo.jpeg?v=2"
-                         alt="M|&|K Accounts Logo">
-
-                </div>
 
 
                 <div class="business-card">
