@@ -3664,7 +3664,7 @@ body {
                     </span>
 
                     <span>
-                        6 Reviews on Google
+                        11 Reviews on Google
                     </span>
 
                 </div>
@@ -4610,7 +4610,7 @@ body {
                     </div>
 
                     <div class="google-text">
-                        6 reviews · Google Maps
+                        11 reviews · Google Maps
                     </div>
 
                 </div>
@@ -4619,8 +4619,6 @@ body {
             </a>
 
         </div>
-
-
 
         <div class="reviews-grid">
 
@@ -4658,10 +4656,7 @@ body {
 
                 <p class="review-text">
 
-                    I am very impressed with the service.
-                    Professional, timely, and extremely
-                    helpful throughout the entire tax
-                    filing process.
+                    I am very impressed with the service
 
                 </p>
 
@@ -4702,10 +4697,7 @@ body {
 
                 <p class="review-text">
 
-                    Loved it. The team handled all my GST
-                    filings seamlessly and explained every
-                    step clearly. Highly recommend to any
-                    business owner.
+                    Loved it
 
                 </p>
 
@@ -4720,17 +4712,17 @@ body {
                     <div class="review-person">
 
                         <div class="review-avatar">
-                            MS
+                            AS
                         </div>
 
                         <div>
 
                             <div class="review-name">
-                                Mohit Sharma
+                                Amit Sain
                             </div>
 
                             <div class="review-date">
-                                1 month ago
+                                1 day ago
                             </div>
 
                         </div>
@@ -4746,53 +4738,11 @@ body {
 
                 <p class="review-text">
 
-                    Quick turnaround, transparent pricing
-                    and thorough documentation. Exactly
-                    what I needed for my small business
-                    accounts.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="review-card reveal">
-
-                <div class="review-top">
-
-                    <div class="review-person">
-
-                        <div class="review-avatar">
-                            MP
-                        </div>
-
-                        <div>
-
-                            <div class="review-name">
-                                Manav Pruthi
-                            </div>
-
-                            <div class="review-date">
-                                4 months ago
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="review-stars">
-                        ★★★★★
-                    </div>
-
-                </div>
-
-
-                <p class="review-text">
-
-                    Excellent accounting service. Very
-                    knowledgeable staff and easy to work
-                    with. They saved me both time and money.
+                    Excellent service, professional team,
+                    quick response, and genuine guidance.
+                    All accounting and tax-related work is
+                    handled smoothly and accurately.
+                    Highly recommended!
 
                 </p>
 
@@ -4800,6 +4750,8 @@ body {
 
 
         </div>
+
+
 
 
 
